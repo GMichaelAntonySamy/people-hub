@@ -1,5 +1,6 @@
 {
-  "name": "my-react-app",
+  "name": "people-hub",
+  "homepage": "/people-hub/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
