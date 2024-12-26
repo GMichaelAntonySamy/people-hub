@@ -7,10 +7,10 @@
   --hover-color: #3498db;
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
-
 /* Navbar container */
 .navbar {
-  width: 80%;
+  width: 92%;
+  /* max-width: 1200px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,14 +19,14 @@
   border: 1px solid var(--primary-color);
   border-radius: 20px;
   box-shadow: 0 2px 4px var(--shadow-color);
-
+  height: 90px;
   /* Positioning */
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
-
 /* Left section */
 .nav-left {
   display: flex;
@@ -38,23 +38,70 @@
   height: 40px;
   width: auto;
 }
-
 .pipe {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  margin-top: -10px;
   color: var(--primary-color);
 }
+.heading-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* Space between pipe and text */
+}
 
+.pipe-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: -10px;
+  color: var(--primary-color); /* Adjust your color variable */
+}
+
+.heading-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color); /* Adjust your color variable */
+}
 .brand-name {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--text-color-black);
 }
-
 /* Right section */
 .nav-right {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+/* Search container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color-black);
+  transition: color 0.3s ease;
+}
+.search-icon:hover {
+  color: var(--hover-color);
+}
+/* Search box */
+.search-box {
+  width: 0;
+  padding: 0.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  opacity: 0;
+  transition: width 0.4s ease, opacity 0.4s ease;
+}
+.search-container .search-box:focus,
+.search-container .search-box {
+  width: 300px;
+  opacity: 1;
 }
 
 /* Profile initials circle */
@@ -88,8 +135,7 @@
   transform: scale(1.1);
 }
 
-/* Dropdown menu */
-.dropdown-menu {
+.dropdown-menu{
   position: absolute;
   top: 40px;
   right: 0;
@@ -98,6 +144,7 @@
   border-radius: 5px;
   display: none;
   z-index: 10;
+  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .flag-dropdown:hover .dropdown-menu {
@@ -106,12 +153,14 @@
 
 .dropdown-menu li {
   list-style: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-menu li:hover {
   background-color: var(--hover-color);
+  color: var(--background-white);
 }
 
 /* Hamburger menu */
@@ -126,20 +175,211 @@
   color: var(--hover-color);
 }
 
+/* Banner container  Starts*/
+.home-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden; /* Prevent content overflow */
+}
 
+.banner-image {
+  width: 100%;
+  object-fit: cover;
+  height: 75%;
+}
+
+.profile-name {
+  position: absolute; /* Position the text over the image */
+  top: 25%; /* Adjust as needed for positioning */
+  left: 19%;
+  transform: translateX(-50%); /* Center horizontally */
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+/* Centered overlay content */
+.overlay-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* Slightly translucent for a soft effect */
+  padding: 2rem;
+  border-radius: 40px 40px;
+  /* height: 550px; */
+  border: #333 1px solid;
+  padding: 50px;
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.overlay-content p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.banner-swipper-button-fixed {
+  text-decoration: none; /* Remove quotes */
+  color: #fff; /* Remove quotes */
+  background-color: var(--primary-color); /* Assuming you've defined the primary color variable */
+  padding: 10px 20px; /* Remove quotes */
+  border-radius: 5px; /* Remove quotes */
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner-right-policy-scroll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 3px;
+  border-bottom: 2px solid #D9D9D9;
+  justify-content: center;
+}
+
+
+/* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
+.scrollable-container {
+  padding: 20px;
+  height: 385px;
+  overflow: auto;
+}
+
+/* Customize scrollbar track */
+.scrollable-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Customize the handle of the scrollbar */
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Blue color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #ffffff; /* Add a border around the thumb */
+}
+
+/* Customize the track of the scrollbar */
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light gray color for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Add hover effect for the scrollbar thumb */
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary-color); /* Darker blue on hover */
+}
+
+
+
+/* Custom arrow styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--secondary-color) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--hover-color) !important; 
+}
+
+/* Custom bullet styles */
+.swiper-pagination-bullet {
+  background-color: #e7355d !important; /* Change bullet color */
+}
+
+.swiper-pagination-bullet-active {
+  background-color:var(--primary-color) !important; /* Change active bullet color */
+}
+
+.feeds-container {
+  display: flex;
+  width: 95%;
+  padding: 20px;
+  gap: 20px;
+  margin: 0 auto; /* Centers horizontally */
+  justify-content: center; /* Centers content horizontally within the container */
+  align-items: center; /* Centers content vertically within the container */
+}
+
+
+.feeds-left {
+  width: 30%;
+  padding: 10px;
+  text-align: left;
+}
+
+.feeds-center {
+  width: 45%; 
+  padding: 10px;
+  text-align: left;
+}
+
+.feeds-right {
+  width: 25%; 
+  padding: 10px;
+  text-align: left;
+}
+
+
+
+iframe {
+  width: 100%; /* Full width of the parent container */
+  height: 385px; /* Adjust height as needed */
+  border: none; /* Removes any default border */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+/* Banner container  Ends*/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem 0.5rem;
+  }
+
+  .nav-left,
+  .nav-right {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+  }
+
+  .pipe {
+    display: none; /* Hide separator on smaller screens */
+  }
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
