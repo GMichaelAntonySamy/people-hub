@@ -27,7 +27,7 @@ const HomeBannerInfoLeft = () => {
   ];
 
   return (
-    <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "20px", height: "385px" }}>
+    <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "20px", height: "250px" }}>
       <Swiper
         navigation
         pagination={{ clickable: true }}
@@ -42,7 +42,7 @@ const HomeBannerInfoLeft = () => {
               style={{
                 position: "relative",
                 height: "100%",
-                textAlign: "center",
+                textAlign: "left",
                 padding: "20px",
                 display: "flex",
                 flexDirection: "column",
@@ -50,15 +50,15 @@ const HomeBannerInfoLeft = () => {
               }}
             >
               <div>
-                <h3>{slide.title}</h3>
-                <p>{slide.description}</p>
+                <h3 style={{fontSize:'1.2rem',fontWeight:'500'}}>{slide.title}</h3>
+                <p style={{fontSize:'.8rem',fontWeight:'400'}}>{slide.description}</p>
               </div>
-              <a
+              {/* <a
                 href={slide.link}
                 className="banner-swipper-button-fixed"
               >
                 Know More
-              </a>
+              </a> */}
             </div>
           </SwiperSlide>
         ))}

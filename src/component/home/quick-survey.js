@@ -67,7 +67,7 @@ const QuickSurvey = () => {
             marginTop:'20px'
           }}
         >
-          <div style={{ fontWeight: "600",fontSize:'20px', marginBottom: "10px" }}>{currentQuestion.title}</div>
+          <div style={{ fontWeight: "500",fontSize:'.9rem', marginBottom: "10px" }}>{currentQuestion.title}</div>
           <div>
             {currentQuestion.options.map((option, optIndex) => (
               <label
@@ -76,8 +76,8 @@ const QuickSurvey = () => {
                   display: "block",
                   marginBottom: "10px",
                   cursor: "pointer",
-                  fontSize:'18px',
-                  fontWeight: 600,
+                  fontSize:'.8rem',
+                  fontWeight: 500,
                 }}
               >
                 <input
@@ -98,7 +98,7 @@ const QuickSurvey = () => {
               disabled={currentQuestionIndex === 0}
               style={{
                 padding: "10px 20px",
-                fontSize: "16px",
+                fontSize: ".9rem",
                 background: currentQuestionIndex === 0 ? "#ccc" : "#007BFF",
                 color: "#fff",
                 border: "none",
@@ -112,7 +112,7 @@ const QuickSurvey = () => {
               onClick={handleNext}
               style={{
                 padding: "10px 20px",
-                fontSize: "16px",
+                fontSize: ".9rem",
                 background: "#007BFF",
                 color: "#fff",
                 border: "none",
@@ -150,7 +150,7 @@ const QuickSurvey = () => {
             style={{
               marginTop: "20px",
               padding: "10px 20px",
-              fontSize: "16px",
+              fontSize: ".9rem",
               background: "#007BFF",
               color: "#fff",
               border: "none",
@@ -176,7 +176,8 @@ const QuickSurvey = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontWeight: "bold",
+              // fontWeight: "bold",
+              fontSize: ".9rem",
               margin: "0 5px",
               boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
               cursor: "pointer",

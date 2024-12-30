@@ -55,7 +55,7 @@ const FAQ = () => {
           borderRadius: "8px",
           border: "1px solid #ddd",
           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-          fontSize: "16px",
+          fontSize: "1rem",
         }}
       />
 
@@ -81,8 +81,8 @@ const FAQ = () => {
                   background: "#f8f9fa",
                   border: "none",
                   textAlign: "left",
-                  fontSize: "16px",
-                  fontWeight: 600,
+                  fontSize: ".9rem",
+                  fontWeight: 500,
                   cursor: "pointer",
                   display: "flex",
                   justifyContent: "space-between",
@@ -99,8 +99,9 @@ const FAQ = () => {
                   style={{
                     padding: "15px",
                     background: "#fff",
-                    fontSize: "14px",
-                    lineHeight: "1.6",
+                    fontSize: ".8rem",
+                    fontWeight:400,
+                    lineHeight: "1.4",
                   }}
                 >
                   {faq.text}

@@ -23,21 +23,6 @@ const NavBar = () => {
 
       {/* Right Section */}
       <div className="nav-right">
-        <div className="search-container">
-          {showSearchBox && (
-            <input
-              type="text"
-              className="search-box"
-              placeholder="Search..."
-              autoFocus
-            />
-          )}
-          <i
-            className="fas fa-search search-icon"
-            onClick={() => setShowSearchBox(!showSearchBox)}
-            aria-label="Search"
-          ></i>
-        </div>
         <div className="profile-circle">AB</div> {/* Profile initials */}
         <div className="flag-dropdown">
           <i

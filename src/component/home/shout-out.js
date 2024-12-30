@@ -37,8 +37,8 @@ const ShoutOut = () => {
   ];
 
   return (
-    <div style={{ marginTop: "20px" }}>
-      <Headings text={"SHOUT-OUTS"} />
+    <div>
+      <Headings text={"Shout Outs"} />
       <Swiper
         navigation
         pagination={{ clickable: true }}
@@ -58,42 +58,61 @@ const ShoutOut = () => {
                 position: "relative",
                 height: "100%",
                 textAlign: "center",
-                padding: "20px",
+                marginTop: "10px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center", // Vertically center content
+                justifyContent: "center",
                 alignItems: "center",
-                // background: "#fff", // White background for better contrast
-                // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Light shadow for depth
-                borderRadius: "12px", // Rounded corners for the slides
+                borderRadius: "12px",
+                background: "linear-gradient(135deg, #f8f9fa, #ffffff)", // Gradient background
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)", // Soft shadow
+                transition: "transform 0.3s ease, box-shadow 0.3s ease", // Smooth animation
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "scale(1.03)"; // Slight zoom on hover
+                e.currentTarget.style.boxShadow =
+                  "0 6px 15px rgba(0, 0, 0, 0.2)"; // Enhance shadow on hover
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.boxShadow =
+                  "0 4px 10px rgba(0, 0, 0, 0.1)";
               }}
             >
-              {/* Image section */}
               <img
                 src={slide.image}
                 alt={slide.title}
                 style={{
                   width: "100%",
-                  height: "180px",
-                  objectFit: "cover", // Make sure the image fills the container properly
-                  borderRadius: "8px", // Smooth corners for images
-                  marginBottom: "15px", // Space between the image and content
+                  height: "auto",
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                  marginBottom: "15px",
+                  transition: "transform 0.3s ease", // Smooth animation for image
                 }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.05)")
+                } // Slight zoom on hover
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
               />
               <div
                 style={{
-                  padding: "10px",
-                  // backgroundColor: "#f7f7f7", // Light gray background for description area
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", // Subtle shadow for description area
+                  width: "100%",
+                  transition: "transform 0.3s ease", // Smooth animation for hover
                 }}
               >
                 <h3
                   style={{
-                    fontSize: "20px",
-                    fontWeight: "bold",
-                    color: "#333", // Dark color for title
-                    marginBottom: "10px", // Space between title and description
+                    fontSize: "22px", // Slightly larger font for title
+                    fontWeight: "700",
+                    color: "#333", // Consistent color for dark mode
+                    marginBottom: "10px",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden", // Handle long text
                   }}
                 >
                   {slide.title}
@@ -102,8 +121,8 @@ const ShoutOut = () => {
                   style={{
                     fontSize: "16px",
                     color: "#666", // Softer color for description text
-                    lineHeight: "1.5", // Improve readability
-                    marginBottom: "15px", // Add space after description
+                    lineHeight: "1.6", // Improve readability
+                    marginBottom: "20px",
                   }}
                 >
                   {slide.description}

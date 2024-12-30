@@ -1,0 +1,82 @@
+.holiday-calendar-container {
+    padding: 20px;
+    /* background-color: #f8f9fa; */
+    border-radius: 10px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .holiday-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px 0;
+  }
+  
+  .holiday-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #77a1d6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .holiday-date {
+    min-width: 80px;
+    text-align: center;
+    background-color: #7864ac;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .holiday-day {
+    font-size: 1rem;
+  }
+  
+  .holiday-month {
+    font-size: 1rem;
+  }
+  
+  .holiday-details {
+    margin-left: 15px;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .holiday-title {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    color: #333;
+    /* font-weight: bold; */
+  }
+  
+  .holiday-description {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .holiday-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .holiday-date {
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .holiday-details {
+      margin-left: 0;
+    }
+  }
+  
