@@ -1,0 +1,200 @@
+/* Navbar Container */
+.navbar {
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-white);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  height: auto; /* Allows the height to adjust dynamically */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Keeps the navbar above other elements */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: var(--primary-color);
+  color: var(--background-white);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.pipe {
+  font-size: 1.8rem;
+  margin-top: -10px;
+  color: var(--primary-color);
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color-black);
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .brand-name {
+  color: var(--background-white);
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.profile-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.2rem;
+  width: 2.2rem;
+  background-color: var(--primary-color);
+  color: var(--background-white);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled .profile-circle {
+  background-color: var(--hover-color);
+}
+
+/* Flag Dropdown */
+.flag-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.flag-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+  color: var(--hover-color);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: var(--background-white);
+  border: 1px solid var(--shadow-color);
+  border-radius: 5px;
+  display: none;
+  z-index: 100;
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.flag-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: var(--hover-color);
+  color: var(--background-white);
+}
+
+/* Hamburger Menu */
+.hamburger-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--text-color-black);
+  transition: color 0.3s ease;
+  display: none; /* Hidden by default */
+}
+
+.hamburger-icon:hover {
+  color: var(--hover-color);
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .nav-right {
+    gap: 1rem;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+  }
+
+  .profile-circle {
+    height: 2rem;
+    width: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block; /* Show hamburger icon */
+  }
+
+  .nav-right {
+    display: none; /* Hide the menu */
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-white);
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    border-radius: 5px;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .flag-dropdown {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 30px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .profile-circle {
+    height: 1.8rem;
+    width: 1.8rem;
+    font-size: 0.8rem;
+  }
+}

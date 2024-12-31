@@ -1,71 +1,84 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "./../css/NavBar.css";
 import logo from "./../../assert/images/Western_Digital_logo.png";
 
 const NavBar = () => {
   const [selectedFlag, setSelectedFlag] = useState("us");
-  const [showSearchBox, setShowSearchBox] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleFlagChange = (flag) => {
     setSelectedFlag(flag);
+    setDropdownOpen(false);
   };
 
-  const toggleSearchBox = () => {
-    setShowSearchBox(!showSearchBox);
+  const toggleDropdown = () => {
+    setDropdownOpen((prev) => !prev);
   };
 
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
   };
-  
+
+  const handleClickOutside = (event) => {
+    if (
+      !event.target.closest(".flag-dropdown") &&
+      !event.target.closest(".dropdown-menu")
+    ) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
       {/* Left Section */}
       <div className="nav-left">
-        <img src={logo} alt="Logo" className="logo" />{" "}
-        {/* Replace with your logo */}
+        <img src={logo} alt="Logo" className="logo" />
         <span className="pipe">|</span>
         <span className="brand-name">People Hub</span>
       </div>
 
       {/* Right Section */}
-      <div className="nav-right">
-        {/* Search Icon & Search Box */}
-        <div className="search-container">
-          <i
-            className={`fas fa-search search-icon ${showSearchBox ? "active" : ""}`}
-            onClick={toggleSearchBox}
-          ></i>
-          {showSearchBox && (
-            <input
-              type="text"
-              placeholder="Search..."
-              className="search-box"
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
-          )}
-        </div>
-        <div className="profile-circle">LM</div> {/* Profile initials */}
-        Logesh Manohar
+      <div className={`nav-right ${isMenuOpen ? "open" : ""}`}>
+        <div className="profile-circle">LM</div>
+        <span className="profile-name">Logesh Manohar</span>
+
+        {/* Flag Dropdown */}
         <div className="flag-dropdown">
           <i
             className={`flag-icon flag-icon-${selectedFlag}`}
-            onClick={() =>
-              handleFlagChange(selectedFlag === "us" ? "in" : "us")
-            }
+            onClick={toggleDropdown}
+            role="button"
+            aria-expanded={isDropdownOpen}
+            tabIndex={0}
           ></i>
-          <ul className="dropdown-menu">
-            <li onClick={() => handleFlagChange("us")}>
-              <i className="flag-icon flag-icon-us"></i>
-            </li>
-            <li onClick={() => handleFlagChange("in")}>
-              <i className="flag-icon flag-icon-in"></i>
-            </li>
-          </ul>
+          {isDropdownOpen && (
+            <ul className="dropdown-menu">
+              <li onClick={() => handleFlagChange("us")}>
+                <i className="flag-icon flag-icon-us"></i> United States
+              </li>
+              <li onClick={() => handleFlagChange("in")}>
+                <i className="flag-icon flag-icon-in"></i> India
+              </li>
+            </ul>
+          )}
         </div>
-        <i className="fas fa-bars hamburger-icon"></i> {/* Hamburger icon */}
+
+        {/* Hamburger Icon */}
+        <i
+          className="fas fa-bars hamburger-icon"
+          onClick={toggleMenu}
+          role="button"
+          aria-expanded={isMenuOpen}
+          tabIndex={0}
+        ></i>
       </div>
     </nav>
   );

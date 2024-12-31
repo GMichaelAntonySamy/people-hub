@@ -1,4 +1,5 @@
 import React from "react";
+import './../css/HomeBannerInfoRight.css'
 
 const HomeBannerInfoRight = () => {
   const slides = [

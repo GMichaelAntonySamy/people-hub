@@ -2,22 +2,37 @@ import React from "react";
 import bannerImage from "./../../assert/images/banner-image.png";
 import HomeBannerInfoLeft from "./banner-left-info";
 import HomeBannerInfoRight from "./banner-right-info";
+import './../css/HomeBanner.css';
 
 const HomeBanner = () => {
   return (
     <div className="home-banner">
+      {/* Background Image */}
       <img src={bannerImage} className="banner-image" alt="Banner" />
-      {/* <div className="profile-name">Welcome Logesh Manohar</div> */}
+
+      {/* Overlay Content */}
       <div className="overlay-content">
-        <div className="row">
+        <div className="row align-items-center">
+          {/* Left Information Section */}
           <div className="col-md-4 col-lg-4 col-sm-12">
-            <HomeBannerInfoLeft/>
+            <HomeBannerInfoLeft />
           </div>
-          <div className="col-md-5 col-lg-5 col-sm-12" style={{height:'250px'}}>
-            <iframe src="https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3" style={{height:'250px'}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          {/* Video Section */}
+          <div className="col-md-5 col-lg-5 col-sm-12 video-section">
+            <iframe
+              src="https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3"
+              className="video-player"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
+
+          {/* Right Information Section */}
           <div className="col-md-3 col-lg-3 col-sm-12">
-            <HomeBannerInfoRight/>
+            <HomeBannerInfoRight />
           </div>
         </div>
       </div>

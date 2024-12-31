@@ -1,0 +1,57 @@
+.banner-right-policy-scroll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 3px;
+  border-bottom: 2px solid #d9d9d9;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;  
+}
+
+.banner-right-policy-scroll .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.banner-right-policy-scroll .desc {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.banner-right-policy-scroll:hover {
+  border-bottom-color: var(--primary-color); /* Change border color on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow effect */
+}
+
+/* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
+.scrollable-container {
+  padding: 20px;
+  overflow: auto;
+  background-color: #f1f1f1;
+}
+
+/* Customize scrollbar track */
+.scrollable-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Customize the handle of the scrollbar */
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Blue color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #ffffff; /* Add a border around the thumb */
+}
+
+/* Customize the track of the scrollbar */
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light gray color for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Add hover effect for the scrollbar thumb */
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary-color); /* Darker blue on hover */
+}
