@@ -1,4 +1,4 @@
-export const in_data = {
+export const us_data = {
   highlight: [
     {
       id: 1,
