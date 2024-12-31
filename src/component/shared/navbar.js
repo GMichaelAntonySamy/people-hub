@@ -4,11 +4,19 @@ import logo from "./../../assert/images/Western_Digital_logo.png";
 const NavBar = () => {
   const [selectedFlag, setSelectedFlag] = useState("us");
   const [showSearchBox, setShowSearchBox] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleFlagChange = (flag) => {
     setSelectedFlag(flag);
   };
 
+  const toggleSearchBox = () => {
+    setShowSearchBox(!showSearchBox);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
   
 
   return (
@@ -23,7 +31,24 @@ const NavBar = () => {
 
       {/* Right Section */}
       <div className="nav-right">
-        <div className="profile-circle">AB</div> {/* Profile initials */}
+        {/* Search Icon & Search Box */}
+        <div className="search-container">
+          <i
+            className={`fas fa-search search-icon ${showSearchBox ? "active" : ""}`}
+            onClick={toggleSearchBox}
+          ></i>
+          {showSearchBox && (
+            <input
+              type="text"
+              placeholder="Search..."
+              className="search-box"
+              value={searchQuery}
+              onChange={handleSearchChange}
+            />
+          )}
+        </div>
+        <div className="profile-circle">LM</div> {/* Profile initials */}
+        Logesh Manohar
         <div className="flag-dropdown">
           <i
             className={`flag-icon flag-icon-${selectedFlag}`}

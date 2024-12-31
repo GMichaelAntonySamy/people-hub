@@ -7,7 +7,7 @@ const HomeBanner = () => {
   return (
     <div className="home-banner">
       <img src={bannerImage} className="banner-image" alt="Banner" />
-      <div className="profile-name">Welcome Logesh Manohar</div>
+      {/* <div className="profile-name">Welcome Logesh Manohar</div> */}
       <div className="overlay-content">
         <div className="row">
           <div className="col-md-4 col-lg-4 col-sm-12">

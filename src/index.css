@@ -11,21 +11,21 @@
 /* ----------------------- NAV BAR CSS STARTS ----------------------- */
 
 .navbar {
-  width: 90%; /* Takes 90% of the screen width */
-  max-width: 1200px; /* Ensures it doesn't get too wide on large screens */
+  width: 100%; /* Takes 90% of the screen width */
+  /* max-width: 1200px; Ensures it doesn't get too wide on large screens */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-white);
   padding: 0.5rem;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
+  /* border: 1px solid var(--primary-color); */
+  /* border-radius: 10px; */
   box-shadow: 0 2px 4px var(--shadow-color);
   height: auto; /* Allows the height to adjust dynamically */
-  position: absolute; /* Keeps the navbar absolutely positioned */
-  top: 10%; /* Moves the navbar to the vertical center */
-  left: 50%; /* Moves the navbar to the horizontal center */
-  transform: translate(-50%, -50%); /* Adjusts position to perfectly center it */
+  position: fixed; /* Keeps the navbar absolutely positioned */
+  /* top: 10%; Moves the navbar to the vertical center */
+  /* left: 50%; Moves the navbar to the horizontal center */
+  /* transform: translate(-50%, -50%); Adjusts position to perfectly center it */
   z-index: 10; /* Ensures the navbar stays on top of other elements */
 }
 
@@ -127,6 +127,48 @@
   color: var(--hover-color);
 }
 
+/* Search Bar Styles */
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.search-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.search-container .search-box.active {
+  display: block;
+  width: 200px;
+  opacity: 1;
+}
+
+.search-container .search-icon.active {
+  color: #4caf50;
+}
+
+.search-box:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+}
+
 /* ----------------------- NAV BAR CSS END ----------------------- */
 
 /* ----------------------- BANNER CSS END ----------------------- */
@@ -134,14 +176,14 @@
 .home-banner {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 90vh; 
   overflow: hidden; 
 }
 
 .banner-image {
   width: 100%;
   object-fit: cover;
-  height: auto; /* Adjust as needed for the banner height */
+  height: 50vh; /* Adjust as needed for the banner height */
   position: absolute; /* Ensures it can stack behind the navbar */
   top: 0;
   left: 0;
@@ -181,10 +223,10 @@
 
 .overlay-content {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 86%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 1); /* Slightly translucent for a soft effect */
   padding: 2rem;
   border-radius: 40px 40px;
