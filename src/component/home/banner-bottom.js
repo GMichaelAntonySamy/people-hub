@@ -1,33 +1,30 @@
 import React from "react";
-import ShoutOut from "./shout-out";
 import FAQ from "./faq";
 import QuickSurvery from "./quick-survey";
 import QuickLinks from "./quick-links";
-import OurCarrerDevelopmentPhilosophy from "./our-carrer-develpment-philosophy";
 import TopResources from "./top-resources";
 import UpcommingEvents from "./upcomming-events";
 import HolidayCalendar from "./holiday-calendar";
 import Events from "./events";
 import News from "./news";
+import './../css/HomeBannerBottom.css'
+import TopLinks from "./top-links";
+import EventNews from "./events-&-news";
 
-const HomeBannerBottom = () => {
+const HomeBannerBottom = ({siteData}) => {
   return (
-    <div className="feeds-container" style={{ marginTop: "-50px" }}>
+    <div className="feeds-container">
       <div className="feeds-left">
-        <ShoutOut/>
-        <FAQ/>
-        <QuickSurvery/>
+        <FAQ siteData={siteData} />
+        <QuickSurvery siteData={siteData} />
       </div>
       <div className="feeds-center">
-        <QuickLinks/>
-        {/* <OurCarrerDevelopmentPhilosophy/> */}
-        <Events/>
-        <News/>
+        <TopLinks siteData={siteData} />
+        <EventNews siteData={siteData} />
       </div>
       <div className="feeds-right">
-        <TopResources/>
-        <UpcommingEvents/>
-        <HolidayCalendar/>
+        <UpcommingEvents siteData={siteData} />
+        <HolidayCalendar siteData={siteData} />
       </div>
     </div>
   );

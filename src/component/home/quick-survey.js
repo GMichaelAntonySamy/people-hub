@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Headings from "../shared/heading";
 import { motion } from "framer-motion";
 
-const QuickSurvey = () => {
+const QuickSurvey = ({siteData}) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [responses, setResponses] = useState({});
   const [showSummary, setShowSummary] = useState(false);
@@ -34,7 +34,7 @@ const QuickSurvey = () => {
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < surveyData.length - 1) {
+    if (currentQuestionIndex < siteData?.quickSurvey?.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       setShowSummary(true);
@@ -97,9 +97,9 @@ const QuickSurvey = () => {
               onClick={handlePrevious}
               disabled={currentQuestionIndex === 0}
               style={{
-                padding: "10px 20px",
-                fontSize: ".9rem",
-                background: currentQuestionIndex === 0 ? "#ccc" : "#007BFF",
+                padding: "5px 10px",
+                fontSize: ".8rem",
+                background: currentQuestionIndex === 0 ? "#ccc" : "var(--secondary-color)",
                 color: "#fff",
                 border: "none",
                 borderRadius: "5px",
@@ -113,7 +113,7 @@ const QuickSurvey = () => {
               style={{
                 padding: "10px 20px",
                 fontSize: ".9rem",
-                background: "#007BFF",
+                background: "var(--primary-color)",
                 color: "#fff",
                 border: "none",
                 borderRadius: "5px",
@@ -151,7 +151,7 @@ const QuickSurvey = () => {
               marginTop: "20px",
               padding: "10px 20px",
               fontSize: ".9rem",
-              background: "#007BFF",
+              background: "var(--primary-color)",
               color: "#fff",
               border: "none",
               borderRadius: "5px",

@@ -7,24 +7,7 @@ import "swiper/css/pagination";
 // Import modules correctly
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-const HomeBannerInfoLeft = () => {
-  const slides = [
-    {
-      title: "Slide 1",
-      description: "Description for slide 1 goes here.",
-      link: "/know-more-1",
-    },
-    {
-      title: "Slide 2",
-      description: "Description for slide 2 goes here.",
-      link: "/know-more-2",
-    },
-    {
-      title: "Slide 3",
-      description: "Description for slide 3 goes here.",
-      link: "/know-more-3",
-    },
-  ];
+const HomeBannerInfoLeft = ({siteData}) => {
 
   return (
     <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "20px", height: "250px" }}>
@@ -36,7 +19,7 @@ const HomeBannerInfoLeft = () => {
         className="my-swiper"
         style={{ height: "100%" }}
       >
-        {slides.map((slide, index) => (
+        {siteData?.highlight?.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
               style={{

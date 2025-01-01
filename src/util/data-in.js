@@ -32,7 +32,7 @@ export const in_data = {
     },
   ],
   video: {
-    videoUrl: "https://www.youtube.com/watch?v=YqeoJjf_4Xg",
+    videoUrl: "https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3",
     actionUrl: "",
   },
   policy: [
@@ -165,26 +165,26 @@ export const in_data = {
     },
   ],
   events: [
-    {
-      id: 1,
-      image: "blob:https://sharedspace.sharepoint.com/7d79c4d0-a085-4a23-b298-bd12412a6e88",
-      title: "Be A Mentor with MESA (U.S. Based)",
-      dateTime: "Wed, Sep 25, 12:00 AM",
-      type: "Virtual Opportunity",
-      description:
-        "College students pursuing a STEM major are paired with Western Digital eMentors",
-      link: "https://westerndigital.benevity.org/volunteer/1977",
-    },
-    {
-      id: 2,
-      image: "blob:https://sharedspace.sharepoint.com/a7b5a89e-a084-4ca7-a8a8-c733f180b613",
-      title: "eMentoring with Try Engineering Together",
-      dateTime: "Wed, Sep 25, 12:00 AM",
-      type: "Virtual Opportunity",
-      description:
-        "Be a penpal and eMentor with Try Engineering Together this school year!",
-      link: "https://westerndigital.benevity.org/volunteer/1973",
-    },
+    // {
+    //   id: 1,
+    //   image: "blob:https://sharedspace.sharepoint.com/7d79c4d0-a085-4a23-b298-bd12412a6e88",
+    //   title: "Be A Mentor with MESA (U.S. Based)",
+    //   dateTime: "Wed, Sep 25, 12:00 AM",
+    //   type: "Virtual Opportunity",
+    //   description:
+    //     "College students pursuing a STEM major are paired with Western Digital eMentors",
+    //   link: "https://westerndigital.benevity.org/volunteer/1977",
+    // },
+    // {
+    //   id: 2,
+    //   image: "blob:https://sharedspace.sharepoint.com/a7b5a89e-a084-4ca7-a8a8-c733f180b613",
+    //   title: "eMentoring with Try Engineering Together",
+    //   dateTime: "Wed, Sep 25, 12:00 AM",
+    //   type: "Virtual Opportunity",
+    //   description:
+    //     "Be a penpal and eMentor with Try Engineering Together this school year!",
+    //   link: "https://westerndigital.benevity.org/volunteer/1973",
+    // },
     {
       id: 3,
       image: "https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,7b3f4997ecea429c99f97abc5ad8e76e,a727d6902f6a40ecbe4edfc6303b02b9/items/5b64b639bccb465682ae5bc739464a1d/driveItem/thumbnails/0/c400x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",

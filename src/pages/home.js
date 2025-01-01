@@ -5,15 +5,21 @@ import HomeBanner from "../component/home/banner";
 import HomeBannerBottom from "../component/home/banner-bottom";
 
 const Home = () => {
-  
+  const [siteData, setSiteData] = useState({}); // State to hold siteData
+
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
+
+  const handleSiteDataChange = (data) => {
+    setSiteData(data); // Update siteData when NavBar sends new data
+  };
+
   return (
     <div>
-        <NavBar/>
-        <HomeBanner/>
-        <HomeBannerBottom/>
+      <NavBar onSiteDataChange={handleSiteDataChange} />
+      <HomeBanner siteData={siteData} /> {/* Pass siteData to child components if needed */}
+      <HomeBannerBottom siteData={siteData} />
     </div>
   );
 };
