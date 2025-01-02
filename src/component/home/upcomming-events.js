@@ -1,44 +1,39 @@
 import React from "react";
 import Headings from "../shared/heading";
+import "./../css/HolidayCalendar.css";
 
-const UpcomingEvents = () => {
-  const events = [
-    {
-      date: "2024-01-10",
-      title: "Annual Tech Conference",
-      timeSlot: "10:00 AM - 4:00 PM",
-      label: "Conference",
-    },
-    {
-      date: "2024-02-15",
-      title: "Employee Wellness Workshop",
-      timeSlot: "2:00 PM - 5:00 PM",
-      label: "Workshop",
-    },
-    {
-      date: "2024-03-20",
-      title: "Product Launch Event",
-      timeSlot: "6:00 PM - 9:00 PM",
-      label: "Launch",
-    },
-    {
-      date: "2024-04-05",
-      title: "Leadership Training Session",
-      timeSlot: "9:00 AM - 1:00 PM",
-      label: "Training",
-    },
-    {
-      date: "2024-05-30",
-      title: "Quarterly Business Review",
-      timeSlot: "3:00 PM - 6:00 PM",
-      label: "Meeting",
-    },
-  ];
-
+const UpcomingEvents = ({ siteData }) => {
   return (
     <div className="top-resources-container">
       <Headings text={"Upcoming Events"} />
-      <div
+      <div className="holiday-calendar-container">
+        <div className="holiday-list">
+          {siteData?.upcomingEvents?.map((holiday, index) => (
+            <div key={index} className="holiday-card">
+              {/* Date Section */}
+              <div className="holiday-date">
+                <div className="holiday-day">
+                  {new Date(holiday.date).toLocaleDateString("en-US", {
+                    day: "2-digit",
+                  })}
+                </div>
+                <div className="holiday-month">
+                  {new Date(holiday.date).toLocaleDateString("en-US", {
+                    month: "short",
+                  })}
+                </div>
+              </div>
+
+              {/* Details Section */}
+              <div className="holiday-details">
+                <h3 className="holiday-title">{holiday.title}</h3>
+                {/* <p className="holiday-description">{holiday.description}</p> */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* <div
         className="scrollable-container"
         style={{
           display: "flex",
@@ -49,7 +44,7 @@ const UpcomingEvents = () => {
           width: "100%",
         }}
       >
-        {events.map((event, index) => (
+        {siteData?.upcomingEvents?.map((event, index) => (
           <div
             key={index}
             style={{
@@ -64,7 +59,6 @@ const UpcomingEvents = () => {
               width: "100%",
             }}
           >
-            {/* Date Section */}
             <div
               style={{
                 maxWidth: "25%",
@@ -87,7 +81,6 @@ const UpcomingEvents = () => {
               </div>
             </div>
 
-            {/* Event Details */}
             <div
               style={{
                 marginLeft: "15px",
@@ -119,7 +112,7 @@ const UpcomingEvents = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
