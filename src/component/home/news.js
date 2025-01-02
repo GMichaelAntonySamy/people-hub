@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./../css/News.css"; // Corrected import path
+import Headings from "../shared/heading";
 
 const News = ({siteData}) => {
   return (
+    <>
+    <Headings text="News" />
     <div className="news-container">
       <div className="news-list-scrollable">
         {siteData?.news?.map((event) => (
@@ -24,6 +27,7 @@ const News = ({siteData}) => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

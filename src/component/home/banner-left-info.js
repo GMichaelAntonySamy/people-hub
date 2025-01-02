@@ -6,11 +6,14 @@ import "swiper/css/pagination";
 
 // Import modules correctly
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Headings from "../shared/heading";
 
 const HomeBannerInfoLeft = ({siteData}) => {
 
   return (
-    <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "20px", height: "250px" }}>
+    <>
+    <Headings text="Quick News" />
+    <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "20px", height: "150px",marginBottom:'10px' }}>
       <Swiper
         navigation
         pagination={{ clickable: true }}
@@ -47,6 +50,8 @@ const HomeBannerInfoLeft = ({siteData}) => {
         ))}
       </Swiper>
     </div>
+    </>
+    
   );
 };
 

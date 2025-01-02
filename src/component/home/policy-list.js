@@ -1,10 +1,13 @@
 import React from "react";
+import Headings from "../shared/heading";
 
-const HomeBannerInfoRight = ({siteData}) => {
+const PolicyList = ({siteData}) => {
 
 
   return (
-    <div className="scrollable-container" style={{height:'250px'}}>
+    <>
+      <Headings text="Policy" />
+      <div className="scrollable-container">
       {siteData?.policy?.map((slide, index) => (
         <div
           key={index}
@@ -16,14 +19,16 @@ const HomeBannerInfoRight = ({siteData}) => {
             </div> */}
             <div className="col-sm-12 col-md-12">
               <h3 className="title">{slide.title}</h3>
-              <p className="desc">{slide.description}</p>
+              {/* <p className="desc">{slide.description}</p> */}
             </div>
           </div>
         </div>
       ))}
     </div>
+    </>
+    
   );
 };
 
-export default HomeBannerInfoRight;
+export default PolicyList;
 

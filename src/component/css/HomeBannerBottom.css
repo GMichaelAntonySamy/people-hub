@@ -1,49 +1,47 @@
-/* Container styling */
 .feeds-container {
-    display: flex;
-    flex-wrap: wrap; /* Enable wrapping for responsiveness */
-    gap: 10px;
-    /* padding: 20px; */
-    box-sizing: border-box;
-  }
+  width: 90%;
   
-  /* Left, Center, and Right sections */
-  .feeds-left, .feeds-right {
-    flex: 1; /* Allow equal distribution */
-    min-width: 250px; /* Ensure sections don't shrink too small */
-    max-width: 20%; /* Limit width to one-third on large screens */
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0 auto; 
+  margin-top: 100px !important;
+  justify-content: center; /* Centers content horizontally within the container */
+}
+
+.feeds-left,
+.feeds-right {
+  flex: 1;
+  min-width: 250px; 
+  max-width: 20%;
+  box-sizing: border-box;
+}
+
+.feeds-center {
+  flex: 1;
+  min-width: 250px; 
+  max-width: 60%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .feeds-left,
+  .feeds-center,
+  .feeds-right {
+    max-width: 100%;
   }
 
-  .feeds-center {
-    flex: 1; /* Allow equal distribution */
-    min-width: 250px; /* Ensure sections don't shrink too small */
-    max-width: 60%; /* Limit width to one-third on large screens */
-    box-sizing: border-box;
+  .feeds-container {
+    flex-direction: column; 
   }
-  
-  /* Adjust padding for sections */
-  .feeds-left, .feeds-center, .feeds-right {
-    /* padding: 10px; */
-    /* background-color: #f9f9f9; Light background for separation */
-    /* border-radius: 8px; */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+@media (max-width: 768px) {
+  .feeds-left,
+  .feeds-center,
+  .feeds-right {
+    padding: 5px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .feeds-left, .feeds-center, .feeds-right {
-      max-width: 100%; /* Stack sections vertically */
-    }
-  
-    .feeds-container {
-      flex-direction: column; /* Stack columns */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .feeds-left, .feeds-center, .feeds-right {
-      padding: 5px; /* Reduce padding on smaller screens */
-    }
-  }
-  
+}

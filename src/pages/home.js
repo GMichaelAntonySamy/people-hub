@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <NavBar onSiteDataChange={handleSiteDataChange} />
-      <HomeBanner siteData={siteData} /> {/* Pass siteData to child components if needed */}
+      {/* <HomeBanner siteData={siteData} /> Pass siteData to child components if needed */}
       <HomeBannerBottom siteData={siteData} />
     </div>
   );

@@ -2,15 +2,16 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .quick-links-row {
-  display: flex;
-  justify-content: space-between; /* Space the items evenly */
-  align-items: center;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  width: 100%; /* Make sure it uses the full width of the container */
-  max-width: 960px; /* Limit the max-width of the container to prevent stretching */
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Space between columns */
+  align-items: flex-start; /* Align items to the top (or change to center if needed) */
+  flex-wrap: wrap; /* Allow wrapping if the container's width is too small */
+  width: 100%; /* Full width of the container */
+  max-width: 960px; /* Limit the maximum width of the container */
 }
 
 .quick-link {
@@ -35,8 +36,13 @@
   color: #333;
   font-weight: 500;
   transition: all 0.3s ease;
-  width: 100%;
+  min-width: 100%;
+  min-height: 90px;
+  max-height: 90px;
+  max-width: 100px;
   text-align: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .quick-link-item:hover {

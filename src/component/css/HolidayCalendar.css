@@ -1,15 +1,12 @@
 /* Container for the entire holiday calendar */
 .holiday-calendar-container {
-  /* background-color: #f4f7fc; Light background for the whole container */
-  /* border-radius: 10px; */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   width: 100%; /* Ensures the container takes up full available width */
   max-width: 1200px; /* Optionally, set a max-width to prevent it from getting too wide */
   /* margin: 0 auto; Center the container horizontally */
   /* padding: 10px; Padding for better spacing inside the container */
-  max-height: 450px;
+  max-height: 350px;
   margin-bottom: 20px;
-  margin-top: 10px;
   overflow: auto; /* Allow scrolling if content overflows */
 }
 
@@ -35,8 +32,9 @@
 .holiday-card {
   background-color: #fff;  /* Add background color to maintain consistency */
   border-radius: 8px;
-  border-left: grey 1px solid;
-  border-bottom: grey 2px solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border-left: grey 1px solid; */
+  /* border-bottom: grey 2px solid; */
   padding: 15px; /* Increased padding for better spacing */
   display: flex;
   flex-direction: row;
@@ -45,7 +43,7 @@
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
   box-sizing: border-box; /* Ensure padding does not cause overflow */
-  width: 85%; /* Ensure the card uses the full available width */
+  width: 95%; /* Ensure the card uses the full available width */
   max-width: 100%; /* Prevent overflow if the content is too wide */
 }
 

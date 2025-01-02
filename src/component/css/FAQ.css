@@ -1,6 +1,6 @@
 /* Container */
 .faq-container {
-    /* padding: 20px; */
+    margin-bottom: 10px;
     max-width: 800px;
     margin: 0 auto;
   }

@@ -4,8 +4,9 @@ import "./../css/HolidayCalendar.css";
 
 const UpcomingEvents = ({ siteData }) => {
   return (
+    <>
+    <Headings text={"Upcoming Events"} />
     <div className="top-resources-container">
-      <Headings text={"Upcoming Events"} />
       <div className="holiday-calendar-container">
         <div className="holiday-list">
           {siteData?.upcomingEvents?.map((holiday, index) => (
@@ -114,6 +115,7 @@ const UpcomingEvents = ({ siteData }) => {
         ))}
       </div> */}
     </div>
+    </>
   );
 };
 

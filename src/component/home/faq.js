@@ -16,8 +16,10 @@ const FAQ = ({ siteData }) => {
   );
 
   return (
+    <>
+    <Headings text="FAQ" />
     <div className="faq-container">
-      <Headings text="FAQ" />
+      
       {/* Search Bar */}
       <input
         type="text"
@@ -57,6 +59,7 @@ const FAQ = ({ siteData }) => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

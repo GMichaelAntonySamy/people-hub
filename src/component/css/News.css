@@ -1,18 +1,15 @@
 .news-container {
-  /* margin-top: 60px; */
-  /* background-color: #f9f9f9; */
+  margin-top: 10px;
 }
 
-
-/* Custom scrollbar for webkit browsers (Chrome, Safari, Edge) */
 .news-list-scrollable {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 10px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+  gap: 20px; /* Space between grid items */
+  overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin;
-  margin-top: 10px;
-  overflow: auto;
+  /* max-height: 500px;  */
+  padding: 10px; /* Optional padding for better spacing */
 }
 
 /* Customize scrollbar track */
@@ -39,8 +36,7 @@
 }
 
 .news-card {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 0; /* Adjust width to fit grid cell */
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
