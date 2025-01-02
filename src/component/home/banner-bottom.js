@@ -27,7 +27,7 @@ const HomeBannerBottom = ({ siteData }) => {
           allowFullScreen
         ></iframe>
         
-        <QuickLinks siteData={siteData} />
+        <TopResources siteData={siteData} />
         <MostViewedPages siteData={siteData} />
         <FAQ siteData={siteData} />
         <QuickSurvery siteData={siteData} />
@@ -39,7 +39,8 @@ const HomeBannerBottom = ({ siteData }) => {
         <News siteData={siteData} />
       </div>
       <div className="feeds-right">
-        <TopResources siteData={siteData} />
+      <QuickLinks siteData={siteData} />
+        
         <PolicyList siteData={siteData} />
         <UpcommingEvents siteData={siteData} />
         <HolidayCalendar siteData={siteData} />
