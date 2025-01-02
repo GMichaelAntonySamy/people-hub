@@ -334,4 +334,41 @@ export const us_data = {
       description: "Celebrates the birth of Jesus Christ.",
     }
   ],
+ mostviewedPages: [
+    {
+      id: 1,
+      image: "https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/SiteAssets/SitePages/Connect-Dec-16-2024/3008831431Dec-16-TOTW.png?_oat_=1735854849_d6cadbde0711103ff44f84cf5ee842f669309395eec35047ab794fcd800d4507&P1=1735802236&P2=-149452251&P3=1&P4=qtGidL21J8x1lRvHTRzfmQRBSxGiEdORhvkMKFLVfBaWK4AxEgGVq5mLrQc5bAjNAIVxwUkSghlyv1qYrdpTvwHI5ZkG5cwJ%2fhFmmTarbxeLv6d1UiD4mC5xx3vvbhQ2Oi3jMtDCJF8PLxOSVL2xg5XFClOoQrrS6bvyL3gI07wUe5wMQ1%2fPyzbYq0s7sRnb1Mt%2b%2bZ5Gq%2bOCK%2fP%2fHWAq%2bCuOYwpClfogfbRYsEjDbhfihmLouTKeQLCMNgB9i9YafP1OEzBa9sR863x524R4G%2bokWEKKB%2ffy6loTX6tjonV3lKo8BpHky0isWwYlXiQsLqVgfJjdIb5VkIm8u7X9hA%3d%3d&width=400",
+      title:"Home",
+      subtitle:"Connect",
+      link: "https://sharedspace.sharepoint.com/",
+    },
+    {
+      id: 2,
+      image: "https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/Operations-Hub/Shared%20Documents/Assets/Blogs2022/IrvingBanners/Irving%20Tan_Blog%20Banner%20A-%202000x500_Gradient.png?_oat_=1735856144_bb7d9dad33d457de4352ef51f96b6b31f1a0de6c71601a02f4c9ec0fd0fe44ce&P1=1735801311&P2=-149452251&P3=1&P4=TuBwoMPVI54prweEMG16gDAknJxU6rRko53%2fhNqkDL38VTiDgiwap5Z9KRjolfvf8Ftw%2bnq2V%2bt6SfzlY%2fs1g7sqhamhOPcGDMSstf%2bNJN18eAj5gKjF7meux7BQL7tZxAjne%2bA16RfL6YDh9M0vytKQaB0AbObw5jQc8lbtPLuhzrUp0eZqRUI3qfGYFB8BGrq8Y%2bM6X6xdDdQEw8MoqKJfXwoZuR%2fR3BZTSBePo5gwU7qn2HKcOjQThT2UXTi8TW2Uue92%2frJnXvUgYssta5FxBarfR5s8k7ItoCpGR%2bJ2WRGycpfXIVgfBus0DtoP%2fzwDjdmhtlpBQBY5VC%2b%2bkQ%3d%3d&width=400",
+      title:"December On the GO",
+      subtitle:"Global Operations",
+      link: "https://sharedspace.sharepoint.com/sites/Operations-Hub/SitePages/Irving-Exec-Blogs/December-'On-the-GO'.aspx",
+    },
+    {
+      id: 3,
+      image: "https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/WDAssetsLibrary/Assets/Information%20Technology/Template%20Assets/page-thumbnails/Blog.jpg?_oat_=1735832251_5f9b3de4148a414ec686c49822d130e792d0c45ed1674690492b9a24432b2ae2&P1=1735800548&P2=-149452251&P3=1&P4=ccA9ta9ojQc1d3pjkw1gFVXccuWwbKk7TNNdPtSuJ%2b5%2bU8VWCf%2f0s5%2fJvmr97N5S9N6b9mIIvuQmKjryLhN3tvWV0CLoELDhTgKbMCKwgH5b6oXYl1JqotkAWwWbwQozr1uDDGcis3tqQ31hCOXUzNNLq871pgWezGt7rXD4TbCfpPVZsOS7bSJ5dsrSGcIiTNueipwuq%2bUbChb%2bQ7sAz8AfIIZfZRi17gnf990yrN2lb1Tkychcxcs71gsuPzDEIIOI15nMdc8WxIY6jSzMWnkj%2fBlcCN3LTV6uuvvsHcrCMMHgcqZ2nOSeC7igvM9PB9%2b4jxiuLVnoOeXIKGUaDw%3d%3d&width=400",
+      title:"Mentorship Programs Inspire Employees & Mentees",
+      subtitle:"Connect",
+      link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/mentorship-programs-inspire-employees-and-mentees.aspx",
+    },
+    {
+      id: 4,
+      image: "https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/WDAssetsLibrary/Assets/Information%20Technology/Template%20Assets/page-thumbnails/Blog.jpg?_oat_=1735832251_5f9b3de4148a414ec686c49822d130e792d0c45ed1674690492b9a24432b2ae2&P1=1735800548&P2=-149452251&P3=1&P4=ccA9ta9ojQc1d3pjkw1gFVXccuWwbKk7TNNdPtSuJ%2b5%2bU8VWCf%2f0s5%2fJvmr97N5S9N6b9mIIvuQmKjryLhN3tvWV0CLoELDhTgKbMCKwgH5b6oXYl1JqotkAWwWbwQozr1uDDGcis3tqQ31hCOXUzNNLq871pgWezGt7rXD4TbCfpPVZsOS7bSJ5dsrSGcIiTNueipwuq%2bUbChb%2bQ7sAz8AfIIZfZRi17gnf990yrN2lb1Tkychcxcs71gsuPzDEIIOI15nMdc8WxIY6jSzMWnkj%2fBlcCN3LTV6uuvvsHcrCMMHgcqZ2nOSeC7igvM9PB9%2b4jxiuLVnoOeXIKGUaDw%3d%3d&width=400",
+      title:"December 2024 Update - Employee FAQ",
+      subtitle:"Global Corporate Marketing",
+      link: "https://sharedspace.sharepoint.com/sites/Corporate-Marketing-Hub/SitePages/emp-faq-dec-2024.aspx",
+    },
+    {
+      id: 5,
+      image: "https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/flash-hub/SiteAssets/SitePages/Blog-Post/WDCFlashBUNewsSplash.png?_oat_=1735861860_e37398b31a04ba85f5f162b317cdb4e1a1f74a6d7843c25cf695dc17b1c29e6b&P1=1735802501&P2=-149452251&P3=1&P4=S1rEKxCDf1GybCv5UYOkJRR%2fW6CRNxqKA33XRBfHj7WQRzWp5ywHQ%2bJ7JJ5WQ9fcAXUrhG6jq60t0%2fdJkXccSgH3Tayh%2bbdEO8igfxGrEIx1hWg8ImyS5%2fdVxOcbl5Bt%2fIY9TtbjOLaLzHzLbo60CFsz07OhbR8ZFICWx88g9F0sNYXMmnHpdCW18ds101a4h9zmGBSiPZBxt88A4p6wLCh1lBEe1eYJwvokDwjqbtsnijgqqnCvecW3AygJ6Rh3mtcLORofLecWzM30vkrufy4myiMMj0v10rhhJ41e2fnL%2bjySz8XeeA9rs529AnhtpzcADbkZmPnPkOw1deJa6w%3d%3d&width=400",
+      title:"FPG Newsletter 12/09/2024",
+      subtitle:"Flash",
+      link: "https://sharedspace.sharepoint.com/sites/flash-hub/SitePages/Page(12).aspx",
+    },
+  ],
 };
