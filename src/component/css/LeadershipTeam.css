@@ -1,0 +1,98 @@
+.leadership-team-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  background-color: #f9f9f9; /* Neutral background for better visibility */
+}
+
+.leadership-team-row {
+  display: flex;
+  justify-content: center; /* Center align items in the row */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Wrap items for responsiveness */
+  width: 100%;
+  max-width: 1200px; /* Increased maximum width for a larger grid */
+  gap: 20px; /* Add consistent spacing between cards */
+}
+
+.leadership-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 150px; /* Flexible width with a minimum of 150px */
+  max-width: 180px; /* Limit max width for each item */
+  text-align: center;
+}
+
+.leadership-team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 160px; /* Ensure uniform card width */
+  height: 260px; /* Fixed height for consistent layout */
+  text-align: center;
+  justify-content: space-between; /* Distribute content evenly */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leadership-team-item:hover {
+  border-color: #007bff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leadership-team-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #e0e0e0;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.leadership-team-item:hover .leadership-team-icon {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.leadership-team span {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.leadership-team span:nth-child(1) {
+  font-size: 12px;
+  color: #555; /* Softer color for designation */
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .leadership-team {
+    max-width: 120px; /* Smaller cards for mobile */
+  }
+
+  .leadership-team-item {
+    height: 220px; /* Adjust height for smaller screens */
+    padding: 10px;
+  }
+
+  .leadership-team-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .leadership-team span {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+}

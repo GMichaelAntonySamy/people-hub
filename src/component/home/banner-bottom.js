@@ -12,6 +12,7 @@ import MostViewedPages from "./most-viewed-pages";
 import HomeBannerInfoLeft from "./banner-left-info";
 import PolicyList from "./policy-list";
 import Search from "./search";
+import LeadershipTeam from "./leadership-team";
 
 const HomeBannerBottom = ({ siteData }) => {
   return (
@@ -25,6 +26,7 @@ const HomeBannerBottom = ({ siteData }) => {
       <div className="feeds-center">
         <QuickLinks siteData={siteData} />
         <FAQ siteData={siteData} />
+        <LeadershipTeam siteData={siteData} />
       </div>
       <div className="feeds-right">
         <News siteData={siteData} />
