@@ -16,34 +16,20 @@ import Search from "./search";
 const HomeBannerBottom = ({ siteData }) => {
   return (
     <div className="feeds-container">
-      <div className="feeds-left">
-      <iframe
-          src="https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3"
-          style={{ height: "250px" }}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-        
+      <div className="feeds-left">        
         <TopResources siteData={siteData} />
         <MostViewedPages siteData={siteData} />
-        <FAQ siteData={siteData} />
+        <HolidayCalendar siteData={siteData} />
         <QuickSurvery siteData={siteData} />
       </div>
       <div className="feeds-center">
-        <Search siteData={siteData}/>
-        <HomeBannerInfoLeft siteData={siteData} />
-        <Events siteData={siteData} />
-        <News siteData={siteData} />
+        <QuickLinks siteData={siteData} />
+        <FAQ siteData={siteData} />
       </div>
       <div className="feeds-right">
-      <QuickLinks siteData={siteData} />
-        
-        <PolicyList siteData={siteData} />
+        <News siteData={siteData} />
+        <Events siteData={siteData} />
         <UpcommingEvents siteData={siteData} />
-        <HolidayCalendar siteData={siteData} />
       </div>
     </div>
   );

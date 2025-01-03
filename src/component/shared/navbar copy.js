@@ -28,12 +28,17 @@ const NavBar = ({ onSiteDataChange }) => {
 
   return (
     <nav className="navbar">
+      {/* Left Section */}
       <div className="nav-left">
         <img src={logo} alt="Logo" className="logo" />
         <span className="pipe">|</span>
         <span className="brand-name">People Hub</span>
       </div>
+
+      {/* Right Section */}
       <div className="nav-right">
+        {/* <div className="profile-circle">LM</div> */}
+        {/* Logesh Manohar */}
         <div className="search-bar-container">
           <div className="search-input-wrapper">
             <input
@@ -63,7 +68,7 @@ const NavBar = ({ onSiteDataChange }) => {
             </ul>
           )}
         </div>
-        <i className="fas fa-bars hamburger-icon"></i>
+        <i className="fas fa-bars hamburger-icon"></i> {/* Hamburger icon */}
       </div>
     </nav>
   );

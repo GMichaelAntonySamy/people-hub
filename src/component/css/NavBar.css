@@ -92,6 +92,21 @@
   color: var(--hover-color);
 }
 
+.nav-font-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-font-icon:hover {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+
+
+
 .dropdown-menu {
   position: absolute;
   top: 3rem;
@@ -132,11 +147,11 @@
 .hamburger-icon:hover {
   color: var(--hover-color);
 }
-
+/* 
 .profile-name {
   font-weight: 500;
   font-size: 1.2rem;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 992px) {

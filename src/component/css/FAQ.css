@@ -34,7 +34,7 @@
     background: #f8f9fa;
     border: none;
     text-align: left;
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     display: flex;
@@ -53,7 +53,8 @@
   
   /* Toggle Icon */
   .faq-toggle-icon {
-    font-size: 18px;
+    font-size: 12px;
+    padding: 1px;
     font-weight: bold;
   }
   

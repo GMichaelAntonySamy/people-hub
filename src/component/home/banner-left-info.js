@@ -12,8 +12,8 @@ const HomeBannerInfoLeft = ({siteData}) => {
 
   return (
     <>
-    <Headings text="Quick News" />
-    <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "20px", height: "150px",marginBottom:'10px' }}>
+    {/* <Headings text="Quick News"  /> */}
+    <div style={{  backgroundColor: "rgba(217, 217, 217, 0.4)", padding: "10px", height: "250px",marginBottom:'10px' }}>
       <Swiper
         navigation
         pagination={{ clickable: true }}
@@ -39,12 +39,12 @@ const HomeBannerInfoLeft = ({siteData}) => {
                 <h3 style={{fontSize:'1.2rem',fontWeight:'500'}}>{slide.title}</h3>
                 <p style={{fontSize:'.8rem',fontWeight:'400'}}>{slide.description}</p>
               </div>
-              {/* <a
+              <a
                 href={slide.link}
                 className="banner-swipper-button-fixed"
               >
                 Know More
-              </a> */}
+              </a>
             </div>
           </SwiperSlide>
         ))}

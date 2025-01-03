@@ -252,35 +252,29 @@ iframe {
   }
 
   .profile-name {
-    font-size: 1.8rem;
-    text-align: center;
+    /* font-size: 1.8rem;
+    text-align: center; */
+    position: absolute; /* Position the text over the image */
+  top: 25%; /* Adjust as needed for positioning */
+  left: 19%;
+  transform: translateX(-50%); /* Center horizontally */
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
   }
 
-  .overlay-content {
-    padding: 1.5rem;
-    border-radius: 20px;
-  }
-
-  .overlay-content h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .overlay-content p {
-    font-size: 1rem;
-    text-align: center;
-  }
 
   .banner-swipper-button-fixed {
     font-size: 1rem;
     padding: 8px 16px;
   }
 
-  .feeds-container {
+  /* .feeds-container {
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
-  }
+  } */
 
 }
 @media (max-width: 992px) {
@@ -292,9 +286,9 @@ iframe {
     width: 200px; /* Limit width */
   }
 
-  .feeds-container {
-    gap: 15px; /* Adjust gap for smaller screens */
-  }
+  /* .feeds-container {
+    gap: 15px;
+  } */
 
   .banner-image {
     height: 60vh; /* Adjust banner height */
@@ -303,11 +297,6 @@ iframe {
 @media (max-width: 1200px) {
   .banner-image {
     height: 65vh; /* Slightly taller for medium screens */
-  }
-
-  .overlay-content {
-    width: 90%;
-    padding: 1.5rem;
   }
 
   .navbar {
@@ -319,9 +308,5 @@ iframe {
 @media (orientation: landscape) and (max-height: 500px) {
   .banner-image {
     height: 50vh; /* Adjust height for landscape view */
-  }
-
-  .overlay-content {
-    top: 60%;
   }
 }

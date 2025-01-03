@@ -4,12 +4,12 @@
 
 .news-list-scrollable {
   display: grid; /* Use grid layout */
-  grid-template-columns: repeat(2, 1fr); /* Two columns per row */
-  gap: 20px; /* Space between grid items */
+  grid-template-columns: repeat(1, 1fr); /* Two columns per row */
+  gap: 10px; /* Space between grid items */
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin;
-  /* max-height: 500px;  */
-  padding: 10px; /* Optional padding for better spacing */
+  max-height: 500px; 
+  /* padding: 10px; Optional padding for better spacing */
 }
 
 /* Customize scrollbar track */
