@@ -1,16 +1,11 @@
-/* Container for the entire holiday calendar */
 .holiday-calendar-container {
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  width: 100%; /* Ensures the container takes up full available width */
-  max-width: 1200px; /* Optionally, set a max-width to prevent it from getting too wide */
-  /* margin: 0 auto; Center the container horizontally */
-  /* padding: 10px; Padding for better spacing inside the container */
+  width: 100%;
+  max-width: 1200px; 
   max-height: 350px;
-  margin-bottom: 20px;
-  overflow: auto; /* Allow scrolling if content overflows */
+  margin-bottom: 10px;
+  overflow: auto; 
 }
 
-/* Styling the Heading */
 .holiday-calendar-container h1 {
   font-size: 28px;
   font-weight: 600;
@@ -19,23 +14,15 @@
   margin-bottom: 20px;
 }
 
-/* List of holidays */
 .holiday-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 14px;
-  margin-top: 20px;
-  overflow: hidden; /* Prevent overflow */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 7px;
+  overflow: hidden; 
 }
 
-/* Styling individual holiday cards */
 .holiday-card {
-  background-color: #fff;  /* Add background color to maintain consistency */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* border-left: grey 1px solid; */
-  /* border-bottom: grey 2px solid; */
-  padding: 15px; /* Increased padding for better spacing */
+  padding: 7px; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,10 +34,10 @@
   max-width: 100%; /* Prevent overflow if the content is too wide */
 }
 
-/* Hover effect for the holiday card */
 .holiday-card:hover {
-  border-color: var(--secondary-color);
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  color: var(--hover-color) !important;
+  transition: color 0.3s ease, transform 0.2s ease;
+  transform: translateX(5px); 
 }
 
 /* Date section styles */
@@ -58,7 +45,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 50px;
+  max-width: 50px;
   margin-right: 10px; /* Space between date and title section */
+  border-right: 1px solid var(--primary-color);
 }
 
 .holiday-day {

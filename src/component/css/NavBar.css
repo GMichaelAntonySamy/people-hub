@@ -147,11 +147,6 @@
 .hamburger-icon:hover {
   color: var(--hover-color);
 }
-/* 
-.profile-name {
-  font-weight: 500;
-  font-size: 1.2rem;
-} */
 
 /* Responsive Styles */
 @media (max-width: 992px) {

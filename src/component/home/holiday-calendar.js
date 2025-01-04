@@ -24,7 +24,6 @@ const HolidayCalendar = ({siteData}) => {
                 })}
               </div>
             </div>
-
             {/* Details Section */}
             <div className="holiday-details">
               <h3 className="holiday-title">{holiday.title}</h3>

@@ -13,11 +13,13 @@ import HomeBannerInfoLeft from "./banner-left-info";
 import PolicyList from "./policy-list";
 import Search from "./search";
 import LeadershipTeam from "./leadership-team";
+import TopMenus from "./top-menu";
 
 const HomeBannerBottom = ({ siteData }) => {
   return (
     <div className="feeds-container">
-      <div className="feeds-left">        
+      <div className="feeds-left">  
+        <TopMenus siteData={siteData} />
         <TopResources siteData={siteData} />
         <MostViewedPages siteData={siteData} />
         <HolidayCalendar siteData={siteData} />

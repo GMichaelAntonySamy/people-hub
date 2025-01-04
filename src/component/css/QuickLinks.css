@@ -58,7 +58,7 @@
 }
 
 .quick-link-item:hover .quick-link-icon {
-  color: #007bff; /* Icon color change on hover */
+  color: var(--hover-color); /* Icon color change on hover */
 }
 
 .quick-link span {

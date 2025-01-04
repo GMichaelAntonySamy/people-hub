@@ -11,12 +11,12 @@
 
 .most-viewed-item {
   margin-bottom: 10px; /* Space between list items */
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .most-viewed-item:hover {
   margin-bottom: 10px; /* Space between list items */
-  border-bottom: 1px solid var(--primary-color);
+  /* border-bottom: 1px solid var(--primary-color); */
 }
 
 .most-viewed-link {
