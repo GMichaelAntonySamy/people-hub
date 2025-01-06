@@ -19,8 +19,8 @@ const LeadershipTeam = ({ siteData }) => {
                 <a href="#" className="leadership-team-item">
                   <img
                     className="leadership-team-icon"
-                    // src={data?.image}
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&s"
+                    src={data?.image}
+                    // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&s"
                     alt={data?.name}
                     onError={handleImageError}
                   />
