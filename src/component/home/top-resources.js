@@ -10,6 +10,12 @@ const TopResources = ({ siteData }) => {
         <div className="quick-links-row">
           <div className="quick-link">
             <a href="#" className="quick-link-item">
+            <i className="fas fa-first-aid quick-link-icon"></i>
+              <span>Benefits</span>
+            </a>
+          </div>
+          <div className="quick-link">
+            <a href="#" className="quick-link-item">
               <i className="fas fa-heartbeat quick-link-icon"></i>
               <span>Wellness</span>
             </a>
@@ -35,7 +41,7 @@ const TopResources = ({ siteData }) => {
           <div className="quick-link">
             <a href="#" className="quick-link-item">
               <i className="fas fa-globe quick-link-icon"></i>
-              <span>Diversity Equity & Inclusion</span>
+              <span>Diversity, Equity & Inclusion</span>
             </a>
           </div>
         </div>

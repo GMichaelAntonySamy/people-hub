@@ -5,7 +5,7 @@ import "./../css/QuickLinks.css";
 const QuickLinks = ({siteData}) => {
   return (
     <>
-      <Headings text="Quick Link" />
+      <Headings text="Quick Links" />
       <div className="quick-links-container">
         <div className="quick-links-row">
           <div className="quick-link">

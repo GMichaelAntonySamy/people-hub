@@ -25,22 +25,23 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  /* border: 1px solid black; */
 }
 
 .logo {
-  height: 30px;
-  width: auto;
+  height: auto;
+  width: 138px;
 }
 
 .pipe {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-top: -5px;
   color: var(--primary-color);
 }
 
 .brand-name {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--text-color-black);
   transition: color 0.3s ease;
 }
@@ -49,8 +50,18 @@
   color: var(--background-white);
 }
 
+/* Center Section */
+
+.nav-center {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
 /* Right Section */
 .nav-right {
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   gap: 0.8rem;

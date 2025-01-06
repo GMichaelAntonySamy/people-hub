@@ -1,7 +1,7 @@
 .holiday-calendar-container {
   width: 100%;
   max-width: 1200px; 
-  max-height: 350px;
+  max-height: 420px;
   margin-bottom: 10px;
   overflow: auto; 
 }
@@ -17,7 +17,7 @@
 .holiday-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 7px;
+  /* gap: px; */
   overflow: hidden; 
 }
 
