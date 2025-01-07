@@ -35,20 +35,11 @@ const NavBar = ({ onSiteDataChange }) => {
         <span className="brand-name">People Hub</span>
       </div>
       <div className="nav-center">
-        <div className="search-bar-container">
-          <div className="search-input-wrapper">
-            <input
-              type="text"
-              className="search-input"
-              placeholder="Search in people hub"
-            />
-            <i className="fas fa-search search-icon"></i>
-          </div>
-        </div>
+       Home
       </div>
       <div className={`nav-right ${menuOpen ? "open" : ""}`}>
-        <i className="fas fa-heart nav-font-icon"></i>
-        <i className="fas fa-envelope nav-font-icon"></i>
+        <i className="far fa-heart nav-font-icon"></i>
+        <i className="far fa-envelope nav-font-icon"></i>
         <div
           className="flag-dropdown"
           onMouseEnter={() => setDropdownVisible(true)}
@@ -58,10 +49,10 @@ const NavBar = ({ onSiteDataChange }) => {
           {dropdownVisible && (
             <ul className="dropdown-menu">
               <li onClick={() => handleFlagChange("us")}>
-                <i className="flag-icon flag-icon-us"></i> US
+                <i className="flag-icon flag-icon-us"></i>
               </li>
               <li onClick={() => handleFlagChange("in")}>
-                <i className="flag-icon flag-icon-in"></i> India
+                <i className="flag-icon flag-icon-in"></i>
               </li>
             </ul>
           )}

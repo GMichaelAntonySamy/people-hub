@@ -1,6 +1,17 @@
 import { image } from "framer-motion/client";
 
 export const us_data = {
+  nav:[
+    {
+      title:"Total Rewards",
+      subMenu :[
+        {name:"Benefits",link:""},
+        {name:"Compensation",link:""},
+        {name:"Payroll",link:""},
+        {name:"Well Being",link:""},
+      ]
+    },
+  ],
   highlight: [
     {
       id: 1,
