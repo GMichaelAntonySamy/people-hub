@@ -1,33 +1,40 @@
+import { image } from "framer-motion/client";
+
 export const us_data = {
   highlight: [
     {
       id: 1,
       title: "2024 in Review: Momentum Continues",
       description: "In 2024, Western Digital reached significant milestones.",
+      image:"https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/SiteAssets/SitePages/2024-in-review/26258-ReviewInReview_BANNER.png?_oat_=1736237543_c9d7782d2d4d4757ab9dcd32e6e706a4b29c911e3c47d0f0b11db1c20e1056da&P1=1736227761&P2=-149452251&P3=1&P4=FcxILAFaQijDFwdp9BnGuIrDhzBGdyO6x8CInkCb3hmU%2bC1U8t9rxH0wgHMAdIyozt7%2b%2ftw8RVR6c2NSoPNVWhGuZRXcLo5LUUkhf9f2jJI%2bmry6o9QVFfuIlF2cEmSF0Y%2fe%2foKNNkv%2bUN8lqwr0vC30EQP%2bqoA0i37TzY9oNd65QN%2fvqRQYEKeA2vSnHlwaUxxErXgAmvn3DX32DTDKtgDOqfNY8kRz8EjdQi6bueyy%2bL3PSXxllk1bVrDeNebeHDsd2x0evuqL1lymAuanvx1wxZx5E7vvmOgT0vXv0iwQKztHwgCH1iM0eATSmxbzq0ziGWneouQS0c%2fMUjXbvQ%3d%3d&width=2560&preferOptimized=tru",
       link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/2024-in-review.aspx",
     },
     {
       id: 2,
       title: "Lending a Hand During the Holidays",
       description: "In November and December, Western Digital employees in the U.S. have been taking part in various activities to support our communities. ",
+      image:"https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/SiteAssets/SitePages/lending-a-hand-during-the-holidays/72184-SeasonToGiveBack_Banner.png?_oat_=1736291455_0f5c0cf7b22d5889c58d4ada96d28a0f0544a7453507043ef1982da7d2cd7476&P1=1736226889&P2=-149452251&P3=1&P4=mp2exiwuKyHxJVO11x27KpYNx15rtckc6toNN%2b0%2bQFkRK57TG6WFwKB2l9IKo8esxS%2fAIa6YxWB85%2buVjIyFQuIbGxN7ob6n1bqatLAqz2KiQt6rz76z9z6LMAxnoSUPWgk9dI8h0c9OZgCjNf3jj95lLUFzJ3B%2b3bdp68TOHDmw6%2fdx2YKV2f0cACoH%2fJM8SFxx%2br2cptK%2bOHIOpuT7AXIUhEWJc7jbpLiNsjY4IHaKBG8y7P9%2bNM2VTvVjScaNXKj6bMuuaj0cOOpGr0Y%2bPQCbxo35StYHs0VRkVrDvdWnbalYKPyvZMRaGLX2ofGfFvZGq2lldT4klf77tGPITQ%3d%3d&width=2560&preferOptimized=true",
       link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/lending-a-hand-during-the-holidays.aspx",
     },
     {
       id: 3,
       title: "Mentorship Programs Inspire Employees & Mentees",
       description: "“If there’s a will, there’s a way,” said Jay, Media Program Manager, HDD Business",
+      image:"https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/SiteAssets/SitePages/mentorship-programs-inspire-employees-and-mentees/97019-WDC-Global-Mentorship-Programs_Banner_2000x500px.png?_oat_=1736259542_7501638fd502515cb7402e1fe8414311f1dac3ba484dd2d1320798a7601c8a1a&P1=1736227047&P2=-149452251&P3=1&P4=G8klXUmKbEPwHNXw5e0TEAsmGnLhGJuzJux9b%2b6yFWYGyostXkNSd5kIN3%2fkJcmiqaNDKDynzQTtJNA00TOZ05pJnSmu0drAjpdAGmtNzmWRZZuTsbnoCkudESGEPy3s3UZZhhBXjmbUI9x1FYzO2VS0wR0BnJ7qoYHuLoOSF7aCxBt37hXN3mjZ1o23HFLFMhuMpsbhgvYwC0YgfXTcHlVDsFXTtA9p1qHT8PCXA%2bRUVZZQa9q5hXRQUIZ%2b2QmIRkkIC8FJovS7vnu2h9YIcbEWPlYJQFwO3aDp%2fc4CJtOt5nRC8dI0H%2bHGJu1zgoDAelImALq0ZovY9b3jburidg%3d%3d&width=2560&preferOptimized=true",
       link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/mentorship-programs-inspire-employees-and-mentees.aspx",
     },
     {
       id: 4,
       title: "Chasing Waves: How Data Predicts Surf Spots",
       description: "In the blue-black morning, long before tourists swallow the shores whole, you’ll find the early rising surfers",
+      image:"https://blog.westerndigital.com/wp-content/uploads/2024/11/SurfData_MainHEader_1440x758_R3.png",
       link: "https://blog.westerndigital.com/chasing-waves-how-data-predicts-surf-spots/",
     },
     {
       id: 5,
       title: "We.WIN Writes Its Next Chapter",
       description: "In November, Western Digital’s Women’s Impact Network (We.WIN) hosted a global event",
+      image:"https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/SiteAssets/SitePages/we-win-writes-its-next-chapter/2016-WDC-We.WIN-Event-Recap-Connect-BlogBnr-2000x500px.png?_oat_=1736254297_a15d06f5eaf6e5d2f284ace358a1f79ff1a73604efb3f554f34d656ea869f964&P1=1736228365&P2=-149452251&P3=1&P4=ic1FUzejA6SpUXIfGprLNvvPJBigy5Z0TTdKQySN5ClQg8KOGeyLfW0KUILZ%2bWJlZWgtdENqxfYPw2jFec9NyYjfBTl6SUNaFgn0%2fr6nehKEzcnFKEpT%2bRgEZ8coPxaLNluxHs3ICMmY9GZPQTvdl5%2bwTXpjBPSxMyt0CC8F6nDSmXud7kWoDbJfUrPi33CF1JvsioFCRe%2beJlaGyY%2bkVsrN2gAGk%2fKFbxb1OwW3s1YJGPO9%2bhnHnqzrxJlQ6Hq95yagcSM%2fi2bS2tFFrj0WScBS4OeRXy%2bifqg3XhOa6K4XDJZT%2blQNBjOvQkn8QbbeDr5AAmyuD7DMYv2Vwei7ZQ%3d%3d&width=2560&preferOptimized=true",
       link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/we-win-writes-its-next-chapter.aspx",
     },
   ],

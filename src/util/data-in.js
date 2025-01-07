@@ -2,32 +2,22 @@ export const in_data = {
   highlight: [
     {
       id: 1,
-      title: "Learning Playlist: Gain Clarity During Change",
-      description: "Global People Hub",
-      link: "https://westerndigital.csod.com/samldefault.aspx?ouid=1&returnUrl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dphnxdriver%2526routename%253dAdmin%252fPlayerPageRedirectHandler%2526Route%253d%25252flms-learner-playlist%25252fPlaylistDetails%2526Parameters%253dplaylistId%25253dfad1f729-00fc-4afa-9ec9-0668c3c18f86",
-    },
-    {
-      id: 2,
       title: "Fiscal Fourth Quarter and Fiscal Year 2024 Financial Results",
       description: "Fourth quarter revenue was $3.76 billion, up 9% sequentially (QoQ). Cloud revenue increased 21% (QoQ)",
+      image: "https://www.westerndigital.com/content/dam/store/en-us/assets/company/press-release/press-release-hero-banner.jpg.wdthumb.3000.3000.webp",
       link: "https://www.westerndigital.com/company/newsroom/press-releases/2024/2024-07-31-western-digital-reports-fiscal-fourth-quarter-and-fiscal-year-2024-financial-results",
     },
     {
-      id: 3,
+      id: 2,
       title: "The Western Digital 401(k) Plan is Moving to Fidelity",
       description: "Plan is Moving to Fidelity",
       link: "https://nb.fidelity.com/static/mybenefits/netbenefitslogin/#/login",
     },
     {
-      id: 4,
-      title: "Stay Informed with WD [INSIDE]",
-      description: "Welcome to WD [INSIDE]",
-      link: "https://sharedspace.sharepoint.com/sites/WD-Inside",
-    },
-    {
-      id: 5,
+      id: 3,
       title: "FPG Newsletter 12/29/2024",
       description: "As we close out another year together, I want to take a moment to reflect on our collective achievements and express FPG staff’s heartfelt gratitude to each and every one of you.",
+      image:"https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/flash-hub/SiteAssets/SitePages/Page(13)(1)/98660-Solar-Panels--Alternative-Energy----Freestock-videos.jpeg?_oat_=1736296105_e4f1a14871b46d98102db550edf573e385d3269899c34ed219903b725d970c04&P1=1736229554&P2=-149452251&P3=1&P4=RcnSTuip%2fKh6SSGT%2b%2fN9j92sUBQD%2b9cFe%2bJsE6N1amEw3ToIPYVYVDN%2blA%2fE7jSDB9SCu6ntT9O0MxmWErtGuZUwq%2f3GGRlOqI%2fxK08VTW0rjhqwBE%2bHs%2fHhGqHutI471r99E6NXWcOCYuQOvliAj4PLyzuTH8GLf5BPudDfOqm4vCKAu2Aw8P4SnNokMkgpDxLFCtX88l3UpU35vW5MYFTIsdXYYFo1qE3BZ7jHELWG5dxFUFlQgJg3jLR7vlK2OL4tunMTSqFumNaFkii6M6Nb8KxePbCLv1exBISPyV9Wm9Ul2n%2bfGwgI5FUNxcDuRVN6Iw1gagzpMs4CeoBCTg%3d%3d&width=2560&preferOptimized=true",
       link: "https://sharedspace.sharepoint.com/sites/flash-hub/SitePages/FPG-Newsletter(1).aspx",
     },
   ],
