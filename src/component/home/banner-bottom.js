@@ -20,7 +20,7 @@ const HomeBannerBottom = ({ siteData }) => {
   return (
     <div className="feeds-container">
       <div className="feeds-left">  
-        {/* <TopMenus siteData={siteData} /> */}
+        <TopMenus siteData={siteData} />
         <TopResources siteData={siteData} />
         <MostViewedPages siteData={siteData} />
         <HolidayCalendar siteData={siteData} />

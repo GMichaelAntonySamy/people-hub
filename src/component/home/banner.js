@@ -12,10 +12,10 @@ const HomeBanner = ({ siteData }) => {
         <div className="banner-image" style={{ backgroundImage: `url(${bannerImage})` }}></div>
         <div className="overlay-content">
           <div className="row">
-            <div className="col-md-4 col-lg-4 col-sm-12">
+            <div className="col-md-8 col-lg-8 col-sm-12">
               <HomeBannerInfoLeft siteData={siteData} />
             </div>
-            <div className="col-md-5 col-lg-5 col-sm-12" style={{ height: '250px' }}>
+            {/* <div className="col-md-5 col-lg-5 col-sm-12" style={{ height: '250px' }}>
               <iframe
                 src="https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3"
                 style={{ height: '250px' }}
@@ -25,8 +25,8 @@ const HomeBanner = ({ siteData }) => {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
-            </div>
-            <div className="col-md-3 col-lg-3 col-sm-12">
+            </div> */}
+            <div className="col-md-4 col-lg-4 col-sm-12">
               <PolicyList siteData={siteData} />
             </div>
           </div>

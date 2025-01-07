@@ -54,7 +54,7 @@
   
   .search-input-wrapper {
     position: relative;
-    width: 300px; /* Fixed width for search bar */
+    width: 500px; /* Fixed width for search bar */
   }
   
   .search-input {
