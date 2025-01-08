@@ -5,8 +5,8 @@
     right: 20px;
     background-color: transparent;
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;  /* Circular shape */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;

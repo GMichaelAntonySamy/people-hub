@@ -21,7 +21,7 @@ export const in_data = {
       ]
     },
     {
-      title:"Community Culture",
+      title:"Community & Culture",
       submenu: [
         {id: 1, title: "Culture", link: "https://sharedspace.sharepoint.com/sites/hr-culture",},
         {id: 2, title: "Diversity, Equity & Inclusion", link: "https://sharedspace.sharepoint.com/sites/hr-diversity",},
