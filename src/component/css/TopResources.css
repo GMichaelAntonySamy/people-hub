@@ -1,0 +1,97 @@
+/* Top Menu List - Main Container */
+.top-resources-list {
+  display: flex;
+  flex-direction: column; /* Align items in rows */
+  gap: 7px; /* Space between cards */
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* Top Menu Card */
+.top-resources-card {
+  background-color: #fff;
+  border-radius: 6px; /* Slightly rounded corners */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); Softer shadow */
+  padding: 10px 15px; /* Reduced padding */
+  display: flex;
+  align-items: center; /* Align icon and text in a row */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%; /* Full width of parent container */
+  max-width: 400px; /* Optional: limit width for larger screens */
+  margin: 0 auto; /* Center-align cards */
+  box-sizing: border-box; /* Prevent overflow due to padding */
+}
+
+/* Hover effect for the card */
+.top-resources-card:hover {
+  transition: color 0.3s ease, transform 0.2s ease;
+  transform: translateX(5px); 
+  /* box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); */
+}
+
+/* Icon Section */
+.top-resources-icon {
+  font-size: 20px; /* Slightly smaller icon */
+  color: #4f4f4f; /* Icon color */
+  margin-right: 10px; /* Space between icon and text */
+  display: flex; /* Ensure proper alignment */
+  align-items: center;
+  justify-content: center;
+}
+
+.top-resources-card:hover .top-resources-icon {
+  color: var(--hover-color);
+}
+
+
+
+/* Details Section */
+.top-resources-details {
+  text-align: left; /* Align text to the left */
+  flex-grow: 1; /* Take up remaining space */
+}
+
+/* Title Text */
+.top-resources-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0; /* Remove extra spacing */
+  line-height: 1.2; /* Better spacing for multiline text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-resources-card {
+    padding: 8px 10px; /* Reduce padding for smaller screens */
+    max-width: 100%; /* Allow full width */
+  }
+
+  .top-resources-icon {
+    font-size: 18px; /* Smaller icon for smaller screens */
+    margin-right: 8px;
+  }
+
+  .top-resources-title {
+    font-size: 13px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-resources-list {
+    gap: 5px; /* Smaller gap for very small screens */
+  }
+
+  .top-resources-card {
+    padding: 6px 8px; /* Further reduce padding */
+  }
+
+  .top-resources-icon {
+    font-size: 16px; /* Even smaller icon */
+  }
+
+  .top-resources-title {
+    font-size: 12px; /* Adjust font size for small screens */
+  }
+}

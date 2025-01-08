@@ -18,26 +18,31 @@ import CareerDevelopment from "./career-development";
 
 const HomeBannerBottom = ({ siteData }) => {
   return (
-    <div className="feeds-container">
-      <div className="feeds-left">  
-        {/* <TopMenus siteData={siteData} /> */}
-        <TopResources siteData={siteData} />
-        <MostViewedPages siteData={siteData} />
-        <HolidayCalendar siteData={siteData} />
-        {/* <QuickSurvery siteData={siteData} /> */}
+    <>
+      <div className="feeds-container">
+        <div className="feeds-left">
+          {/* <TopMenus siteData={siteData} /> */}
+          <TopResources siteData={siteData} />
+          <MostViewedPages siteData={siteData} />
+          <HolidayCalendar siteData={siteData} />
+          {/* <QuickSurvery siteData={siteData} /> */}
+        </div>
+        <div className="feeds-center">
+          <QuickLinks siteData={siteData} />
+          <FAQ siteData={siteData} />
+          <CareerDevelopment siteData={siteData} />
+          <TopMenus siteData={siteData} />
+          <PolicyList siteData={siteData} />
+          {/* <LeadershipTeam siteData={siteData} /> */}
+        </div>
+        <div className="feeds-right">
+          <News siteData={siteData} />
+          <Events siteData={siteData} />
+          <UpcommingEvents siteData={siteData} />
+        </div>
       </div>
-      <div className="feeds-center">
-        <QuickLinks siteData={siteData} />
-        <FAQ siteData={siteData} />
-        <CareerDevelopment  siteData={siteData} />
-        <LeadershipTeam siteData={siteData} />
-      </div>
-      <div className="feeds-right">
-        <News siteData={siteData} />
-        <Events siteData={siteData} />
-        <UpcommingEvents siteData={siteData} />
-      </div>
-    </div>
+      <LeadershipTeam siteData={siteData} />
+    </>
   );
 };
 

@@ -17,16 +17,16 @@ const FAQ = ({ siteData }) => {
 
   return (
     <>
-      <Headings text="FAQ" />
+      <Headings text="Frequently Asked Questions​" />
       <div className="faq-container">
         {/* Search Bar */}
-        <input
+        {/* <input
           type="text"
           className="faq-search-bar"
           placeholder="Search FAQs..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        /> */}
 
         {/* FAQ Items */}
         <div>

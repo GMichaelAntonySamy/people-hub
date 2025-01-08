@@ -1,38 +1,50 @@
 import React from "react";
-import Headings from "../shared/heading";
 import "./../css/LeadershipTeam.css";
 
 const LeadershipTeam = ({ siteData }) => {
   const handleImageError = (e) => {
-    e.target.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&s"; // Replace with the path to your avatar icon
-    e.target.onerror = "null"; // Prevent infinite loop in case avatar is not found
+    e.target.src = "https://via.placeholder.com/60?text=No+Image"; // Replace with a fallback placeholder image
+    e.target.onerror = null; // Prevent infinite error loop
   };
 
   return (
-    <>
-      <Headings text="HR Leadership Team" />
-      <div className="leadership-team-container">
-        <div className="leadership-team-row">
-          {siteData?.leadershipTeam?.map((data, index) => {
-            return (
+    <div style={{ backgroundColor: "black" }}>
+      <div className="container">
+        <div
+          style={{
+            textAlign: "left",
+            fontSize: "1.5rem",
+            fontWeight: "450",
+            color: "white",
+            marginTop:"20px"
+          }}
+        >
+          People Solutions Leadership Team
+        </div>
+        <div className="leadership-team-container">
+          <div className="leadership-team-row">
+            {siteData?.leadershipTeam?.map((data, index) => (
               <div className="leadership-team" key={index}>
                 <a href="#" className="leadership-team-item">
                   <img
                     className="leadership-team-icon"
                     src={data?.image}
-                    // src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&s"
                     alt={data?.name}
                     onError={handleImageError}
                   />
-                  <span className="leadership-team-name">{data?.name}</span>
-                  <span className="leadership-team-designation">{data?.desigination}</span>
+                  <div className="leadership-team-text">
+                    <span className="leadership-team-name">{data?.name}</span>
+                    <span className="leadership-team-designation">
+                      {data?.desigination}
+                    </span>
+                  </div>
                 </a>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

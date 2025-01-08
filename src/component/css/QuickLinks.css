@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   padding: 7px;
-  background-color: #fff;
+  background-color: black;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-decoration: none;
@@ -46,13 +46,15 @@
 }
 
 .quick-link-item:hover {
-  border-color: #007bff;
+  /* border-color: var(--hover-color); */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .quick-link-icon {
   font-size: 24px;
-  color: #4f4f4f; /* Neutral icon color */
+  /* color: #4f4f4f;  */
+  color: white;
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
@@ -63,7 +65,8 @@
 
 .quick-link span {
   font-size: 14px;
-  color: #333;
+  /* color: #333; */
+  color: white;
   font-weight: 600;
 }
 

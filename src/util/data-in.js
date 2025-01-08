@@ -1,25 +1,85 @@
+import { link } from "framer-motion/client";
+
 export const in_data = {
-  highlight: [
+  nav: [
     {
-      id: 1,
-      title: "Fiscal Fourth Quarter and Fiscal Year 2024 Financial Results",
-      description: "Fourth quarter revenue was $3.76 billion, up 9% sequentially (QoQ). Cloud revenue increased 21% (QoQ)",
-      image: "https://www.westerndigital.com/content/dam/store/en-us/assets/company/press-release/press-release-hero-banner.jpg.wdthumb.3000.3000.webp",
+      title:"Total Rewards",
+      submenu : [
+        {id: 1, title: "benefits", link: "https://sharedspace.sharepoint.com/sites/hr-benefits"},
+        {id: 2, title: "Compensation", link: "https://sharedspace.sharepoint.com/sites/hr-compensation",},
+        {id: 3, title: "Payroll", link: "https://sharedspace.sharepoint.com/sites/hr-payroll",},
+        {id: 4, title: "Well-Being", link: "https://sharedspace.sharepoint.com/sites/hr-you-matter",},
+      ]
+    },
+    {
+      title:"Career",
+      submenu: [
+        {id: 1, title: "Leadership Development", link: "https://sharedspace.sharepoint.com/sites/talent-management/SitePages/learning-leadership-development.aspx",},
+        {id: 2, title: "Learning & Career Development", link: "https://sharedspace.sharepoint.com/sites/hr-career-development",},
+        {id: 3, title: "Performance", link: "https://sharedspace.sharepoint.com/sites/talent-management/SitePages/performance-management.aspx",},
+        {id: 4, title: "Talent Acquisition", link: "https://sharedspace.sharepoint.com/sites/hr-talent-acquisition",},
+      ]
+    },
+    {
+      title:"Community Culture",
+      submenu: [
+        {id: 1, title: "Culture", link: "https://sharedspace.sharepoint.com/sites/hr-culture",},
+        {id: 2, title: "Diversity, Equity & Inclusion", link: "https://sharedspace.sharepoint.com/sites/hr-diversity",},
+        {id: 3, title: "Employee Resource Groups", link: "https://sharedspace.sharepoint.com/sites/hr-brg",},
+        {id: 4, title: "Employee Referral", link: "https://sharedspace.sharepoint.com/sites/hr-talent-acquisition/SitePages/talent-acquisition-programs.aspx",},
+        {id: 5, title: "Giving & Doing", link: "https://sharedspace.sharepoint.com/sites/hr-ggd",},
+        {id: 6, title: "Recognition", link: "https://sharedspace.sharepoint.com/sites/hr-compensation/SitePages/applause.aspx",},
+      ]
+    },
+    {
+      title:"HR Supportpolicy Systems",
+      submenu: [
+        {id: 1, title: "AskHR", link: "https://login.microsoftonline.com/b61c8803-16f3-4c35-9b17-6f65f441df86/saml2?SAMLRequest=jVLJbtswEP0VgXct1GoTlgHVRlEDaWrEbg69UeTIISCRKoey27%2BvQrtIeqiR6%2FDN24Yr5EOfjqyZ3It%2Bgp8ToAt%2BDb1Gdn2pyWQ1MxwVMs0HQOYEOzRfH1gaJWy0xhlhehI0iGCdMnpjNE4D2APYsxLw%2FemhJi%2FOjcji%2BCJFhNd5qM0lEmaINT%2BP%2FASRNCTYzupK81eat6XenJSOBiWsQdM5o3ulwa%2B2JRWLRZKFtOyyMBdZES5bWoVlVxZdnlPZLcrYxyDBZ2MF%2BJQ16XiPQILdtiaHx01GeVYkebpoJbSiyDu6TIuUt8uqqkRZyBmIe46ozvC2ijjBTqPj2tUkTdIiTGiYVEeaMrpkBY2qvPhBgv2tn09KS6VP98tsryBkX47Hfbj%2Fdjh6grOSYB9n9Md7fAaLvsOZlqxXvgLmPdv3x71vh%2F%2B9KFnf0V3F79lvWiN79bvb7k2vxO%2Bg6Xtz2Vjgbs7g7AT%2BHAN3%2FzdAI%2BonSoadhzIYuOobKS0gknh90%2F33567%2FAA%3D%3D&RelayState=https%3A%2F%2Fwdc.service-now.com%2Fsp%3Fid%3Dhr",},
+        {id: 2, title: "COVID-19 Updates", link: "https://sharedspace.sharepoint.com/sites/COVID_19",},
+        {id: 3, title: "HR Policies", link: "https://sharedspace.sharepoint.com/sites/people-hub/SitePages/global-hr-policies.aspx",},
+        {id: 4, title: "HR Systems", link: "https://sharedspace.sharepoint.com/sites/hr-operations/SitePages/HR-Systems.aspx",},
+        {id: 5, title: "Mobility", link: "https://sharedspace.sharepoint.com/sites/hr-global-mobility/",},
+        {id: 6, title: "People Experience", link: "https://sharedspace.sharepoint.com/sites/hr-px",},
+      ]
+    }
+  ],
+  highlight: [
+    // {
+    //   id: 1,
+    //   title: "Learning Playlist: Gain Clarity During Change",
+    //   description: "Learning Playlist: Gain Clarity During Change",
+    //   image: "https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/f23842eb-e43b-4749-91ee-b08ff13bc82d/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
+    //   link: "https://login.microsoftonline.com/b61c8803-16f3-4c35-9b17-6f65f441df86/saml2",
+    // },
+    {
+      id: 2,
+      title: "TWestern Digital Reports Fiscal Fourth Quarter and Fiscal Year 2024 Financial Results",
+      description: "Western Digital Corp. (Nasdaq: WDC) today reported fiscal fourth quarter and fiscal year 2024 financial results.",
+      image: "https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/f9cfdc30-d5d2-447e-a71d-fe4963cfad91/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
       link: "https://www.westerndigital.com/company/newsroom/press-releases/2024/2024-07-31-western-digital-reports-fiscal-fourth-quarter-and-fiscal-year-2024-financial-results",
     },
     {
-      id: 2,
+      id: 3,
       title: "The Western Digital 401(k) Plan is Moving to Fidelity",
-      description: "Plan is Moving to Fidelity",
+      description: "The Western Digital 401(k) Plan is Moving to Fidelity.",
+      image:"https://media.akamai.odsp.cdn.office.net/southcentralus1-mediap.svc.ms/transform/thumbnail?provider=url&inputFormat=jpg&docid=https%3A%2F%2Fcdn.hubblecontent.osi.office.net%2Fm365content%2Fpublish%2F6ca3d900-a08e-4e87-a180-e67d9ee0a287%2Fimage.jpg&w=960",
       link: "https://nb.fidelity.com/static/mybenefits/netbenefitslogin/#/login",
     },
     {
-      id: 3,
-      title: "FPG Newsletter 12/29/2024",
-      description: "As we close out another year together, I want to take a moment to reflect on our collective achievements and express FPG staff’s heartfelt gratitude to each and every one of you.",
-      image:"https://sharedspace.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/flash-hub/SiteAssets/SitePages/Page(13)(1)/98660-Solar-Panels--Alternative-Energy----Freestock-videos.jpeg?_oat_=1736296105_e4f1a14871b46d98102db550edf573e385d3269899c34ed219903b725d970c04&P1=1736229554&P2=-149452251&P3=1&P4=RcnSTuip%2fKh6SSGT%2b%2fN9j92sUBQD%2b9cFe%2bJsE6N1amEw3ToIPYVYVDN%2blA%2fE7jSDB9SCu6ntT9O0MxmWErtGuZUwq%2f3GGRlOqI%2fxK08VTW0rjhqwBE%2bHs%2fHhGqHutI471r99E6NXWcOCYuQOvliAj4PLyzuTH8GLf5BPudDfOqm4vCKAu2Aw8P4SnNokMkgpDxLFCtX88l3UpU35vW5MYFTIsdXYYFo1qE3BZ7jHELWG5dxFUFlQgJg3jLR7vlK2OL4tunMTSqFumNaFkii6M6Nb8KxePbCLv1exBISPyV9Wm9Ul2n%2bfGwgI5FUNxcDuRVN6Iw1gagzpMs4CeoBCTg%3d%3d&width=2560&preferOptimized=true",
-      link: "https://sharedspace.sharepoint.com/sites/flash-hub/SitePages/FPG-Newsletter(1).aspx",
+      id: 4,
+      title: "Stay Informed with WD [INSIDE]",
+      description: "Welcome to WD [INSIDE] – stay informed on pressing company updates that cover the information you care about from the most informed sources inside Western Digital.",
+      image:"https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/b4003747-b354-4f06-9343-14c2dd496ac9/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
+      link: "https://sharedspace.sharepoint.com/sites/WD-Inside",
     },
+    {
+      id: 5,
+      title: "CommUNITY Day Unites Employees",
+      description: "At Western Digital’s sites in May and June, employees gathered at their local sites to give back, play games, share a meal and network at CommUNITY Day.",
+      image:"https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/81289b47-6ab3-41fb-b37e-b5a70e9411c0/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
+      link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/community-day-unites-employees.aspx",
+    },
+    
   ],
   video: {
     videoUrl: "https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3",

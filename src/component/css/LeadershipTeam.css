@@ -1,81 +1,80 @@
 .leadership-team-container {
-  text-align: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  /* margin: 0 auto; */
+  text-align: center;
+  /* padding: 20px; */
 }
 
 .leadership-team-row {
-  display: flex; /* Enable flexbox */
-  justify-content: space-between; /* Space between columns */
-  align-items: flex-start; /* Align items to the top (or change to center if needed) */
-  flex-wrap: wrap; /* Allow wrapping if the container's width is too small */
-  width: 100%; /* Full width of the container */
-  max-width: 960px; /* Limit the maximum width of the container */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsive layout */
+  gap: 16px; /* Add spacing between rows and columns */
 }
 
 .leadership-team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3px;
-  flex: 1 1 auto; /* Allow items to take equal width but not shrink */
-  max-width: 160px; /* Limit max width for each item */
+  flex: 1 1 calc(20% - 16px); /* Divide row into 5 equal columns with spacing */
+  box-sizing: border-box;
+  max-width: calc(20% - 16px); /* Ensure consistent max-width */
   text-align: center;
 }
 
 .leadership-team-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 7px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  display: flex; /* Horizontal layout for image and text */
+  flex-direction: row;
+  align-items: center; /* Center align items vertically */
+  padding: 12px;
+  /* background-color: #fff; */
+  /* border: 1px solid #ddd; */
   border-radius: 8px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  min-height: 100px;
   transition: all 0.3s ease;
-  min-width: 100%;
-  max-width: 100px;
-  height: 120px;
-  text-align: center;
-  justify-content: center;
-  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .leadership-team-item:hover {
   border-color: var(--hover-color);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .leadership-team-icon {
-  width: 48px;
-  height: auto;
+  width: 60px;
+  height: 60px; /* Fixed size for image */
   border-radius: 50%;
-  color: #4f4f4f; /* Neutral icon color */
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
+  margin-right: 12px; /* Space between image and text */
 }
 
-.leadership-team-item:hover .leadership-team-icon {
-  color: #007bff; /* Icon color change on hover */
+.leadership-team-text {
+  display: flex;
+  flex-direction: column; /* Stack name and designation */
+  align-items: flex-start; /* Align text to the left */
 }
 
-.leadership-team .leadership-team-name {
-  font-size: 12px;
-  color: #333;
+.leadership-team-name {
+  font-size: 14px;
+  color: white;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
-.leadership-team .leadership-team-designation {
-  font-size: 10px;
-  color: #333;
-  font-weight: 500;
+.leadership-team-designation {
+  font-size: 12px;
+  color: #666;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
   .leadership-team {
-    max-width: 120px; /* Slightly smaller width for mobile */
+    flex: 1 1 calc(50% - 16px); /* Two columns on tablets */
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .leadership-team {
+    flex: 1 1 100%; /* Single column on mobile */
+    max-width: 100%;
   }
 }

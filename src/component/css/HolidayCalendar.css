@@ -1,7 +1,7 @@
 .holiday-calendar-container {
   width: 100%;
   max-width: 1200px; 
-  max-height: 420px;
+  max-height: 400px;
   margin-bottom: 10px;
   overflow: auto; 
 }

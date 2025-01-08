@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "../component/shared/navbar";
 import HomeBanner from "../component/home/banner";
 import HomeBannerBottom from "../component/home/banner-bottom";
+import HomeBannerInfoLeft from "../component/home/banner-left-info";
 
 const Home = () => {
   const [siteData, setSiteData] = useState({}); // State to hold siteData

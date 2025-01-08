@@ -5,7 +5,7 @@ import "./../css/MostViewed.css";
 const MostViewedPages = ({ siteData }) => {
   return (
     <>
-      <Headings text="Most Viewed" />
+      <Headings text="My Favorites​" />
       <div className="most-viewed-container">
         <ul className="most-viewed-list">
           {siteData?.mostviewedPages?.map((data, index) => (

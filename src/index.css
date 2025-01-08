@@ -184,17 +184,6 @@ iframe {
   width: 100%;
 }
 
-.profile-name {
-  position: absolute; /* Position the text over the image */
-  top: 20%; /* Adjust as needed for positioning */
-  left: 20%;
-  transform: translateX(-50%); /* Center horizontally */
-  color: #f1f1f1;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
-}
-
 /* Banner container  Ends*/
 /* Responsive Design */
 @media (max-width: 768px) {
