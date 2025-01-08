@@ -1,5 +1,9 @@
 import { link } from "framer-motion/client";
-
+import one from "../assert/images/1_2.jpg"
+import two from "../assert/images/2_2.jpg"
+import three from "../assert/images/3_2.jpg"
+import four from "../assert/images/4_2.jpg"
+import five from "../assert/images/5_2.png"
 export const in_data = {
   nav: [
     {
@@ -48,35 +52,35 @@ export const in_data = {
       id: 1,
       title: "Learning Playlist: Gain Clarity During Change",
       description: "Learning Playlist: Gain Clarity During Change",
-      image:'/people-hub/assert/img/1.jpg',
+      image:one,
       link: "https://login.microsoftonline.com/b61c8803-16f3-4c35-9b17-6f65f441df86/saml2",
     },
     {
       id: 2,
       title: "Western Digital Reports Fiscal Fourth Quarter and Fiscal Year 2024 Financial Results",
       description: "Western Digital Corp. (Nasdaq: WDC) today reported fiscal fourth quarter and fiscal year 2024 financial results.",
-      image:'/people-hub/assert/img/2.jpg',
+      image:two,
       link: "https://www.westerndigital.com/company/newsroom/press-releases/2024/2024-07-31-western-digital-reports-fiscal-fourth-quarter-and-fiscal-year-2024-financial-results",
     },
     {
       id: 3,
       title: "The Western Digital 401(k) Plan is Moving to Fidelity",
       description: "The Western Digital 401(k) Plan is Moving to Fidelity.",
-      image:'/people-hub/assert/img/3.jpg',
+      image:three,
       link: "https://nb.fidelity.com/static/mybenefits/netbenefitslogin/#/login",
     },
     {
       id: 4,
       title: "Stay Informed with WD [INSIDE]",
       description: "Welcome to WD [INSIDE] – stay informed on pressing company updates that cover the information you care about from the most informed sources inside Western Digital.",
-      image:'/people-hub/assert/img/4.jpeg',
+      image:four,
       link: "https://sharedspace.sharepoint.com/sites/WD-Inside",
     },
     {
       id: 5,
       title: "CommUNITY Day Unites Employees",
       description: "At Western Digital’s sites in May and June, employees gathered at their local sites to give back, play games, share a meal and network at CommUNITY Day.",
-      image:'/people-hub/assert/img/5.jpg',
+      image:five,
       link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/community-day-unites-employees.aspx",
     },
     

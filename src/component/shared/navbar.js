@@ -88,7 +88,7 @@ const NavBar = ({ onSiteDataChange }) => {
               ></i>
             </a>
             <a className="nav-icon me-3" href="#" style={{textDecoration:'none'}}>
-              Logesh
+              David
             </a>
             <span className="nav-icon" href="#">
               <div className="nav-item dropdown">

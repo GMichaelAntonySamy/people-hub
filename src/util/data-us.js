@@ -1,9 +1,9 @@
 import { image } from "framer-motion/client";
-import one from "../assert/images/1.jpg"
-import two from "../assert/images/2.jpg"
-import three from "../assert/images/3.jpg"
-import four from "../assert/images/4.jpeg"
-import five from "../assert/images/5.jpg"
+import one from "../assert/images/1_2.jpg"
+import two from "../assert/images/2_2.jpg"
+import three from "../assert/images/3_2.jpg"
+import four from "../assert/images/4_2.jpg"
+import five from "../assert/images/5_2.png"
 
 export const us_data = {
   nav: [
