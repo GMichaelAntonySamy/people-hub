@@ -5,8 +5,10 @@ import carrer from "./../../assert/images/career.png"
 const CareerDevelopment = ({ siteData }) => {
   return (
     <>
+    <br/>
       <Headings text="Career Development at Western Digital​" />
       <div className="faq-container">
+      <br></br>
       <img src={carrer} alt="Logo" className="logo" style={{width:'100%',height:'auto'}}/>
       </div>
     </>

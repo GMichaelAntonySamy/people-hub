@@ -2,44 +2,22 @@ import React from "react";
 import Headings from "../shared/heading";
 import "./../css/QuickLinks.css";
 
-const QuickLinks = ({siteData}) => {
+const QuickLinks = ({ siteData }) => {
   return (
     <>
-      <Headings text="Quick Links" />
+      <h2 className="quick-links-heading">Quick Links</h2>
       <div className="quick-links-container">
-        <div className="quick-links-row">
-          <div className="quick-link">
-            <a href="#" className="quick-link-item">
-              <i className="fas fa-comments quick-link-icon"></i>
-              <span>Ask HR</span>
+      <div className="quick-links-row">
+        {siteData?.quickLinks?.map((item, index) => (
+          <div className="quick-link" key={index}>
+            <a href={item.link} className="quick-link-item" target="_blank" rel="noopener noreferrer">
+              <i className={`fas ${item.icon} quick-link-icon`}></i>
+              <span>{item.title}</span>
             </a>
           </div>
-          <div className="quick-link">
-            <a href="#" className="quick-link-item">
-              <i className="fas fa-briefcase quick-link-icon"></i>
-              <span>Workday</span>
-            </a>
-          </div>
-          <div className="quick-link">
-            <a href="#" className="quick-link-item">
-              <i className="fas fa-plane-departure quick-link-icon"></i>
-              <span>Mobility</span>
-            </a>
-          </div>
-          <div className="quick-link">
-            <a href="#" className="quick-link-item">
-              <i className="fas fa-graduation-cap quick-link-icon"></i>
-              <span>Training</span>
-            </a>
-          </div>
-          <div className="quick-link">
-            <a href="#" className="quick-link-item">
-              <i className="fas fa-hand-holding-usd quick-link-icon"></i>
-              <span>Benefits</span>
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
+    </div>
     </>
   );
 };

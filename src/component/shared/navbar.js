@@ -31,7 +31,7 @@ const NavBar = ({ onSiteDataChange }) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container" style={{padding:'1px'}}>
         <a className="navbar-brand" href="/">
           <img src={logo} alt="Logo" className="logo" />
@@ -86,6 +86,9 @@ const NavBar = ({ onSiteDataChange }) => {
                 className="far fa-envelope nav-font-icon"
                 aria-label="Messages"
               ></i>
+            </a>
+            <a className="nav-icon me-3" href="#" style={{textDecoration:'none'}}>
+              Logesh
             </a>
             <span className="nav-icon" href="#">
               <div className="nav-item dropdown">

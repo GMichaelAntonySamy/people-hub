@@ -32,7 +32,7 @@ export const in_data = {
       ]
     },
     {
-      title:"HR Supportpolicy Systems",
+      title:"HR Support, Policy & Systems",
       submenu: [
         {id: 1, title: "AskHR", link: "https://login.microsoftonline.com/b61c8803-16f3-4c35-9b17-6f65f441df86/saml2?SAMLRequest=jVLJbtswEP0VgXct1GoTlgHVRlEDaWrEbg69UeTIISCRKoey27%2BvQrtIeqiR6%2FDN24Yr5EOfjqyZ3It%2Bgp8ToAt%2BDb1Gdn2pyWQ1MxwVMs0HQOYEOzRfH1gaJWy0xhlhehI0iGCdMnpjNE4D2APYsxLw%2FemhJi%2FOjcji%2BCJFhNd5qM0lEmaINT%2BP%2FASRNCTYzupK81eat6XenJSOBiWsQdM5o3ulwa%2B2JRWLRZKFtOyyMBdZES5bWoVlVxZdnlPZLcrYxyDBZ2MF%2BJQ16XiPQILdtiaHx01GeVYkebpoJbSiyDu6TIuUt8uqqkRZyBmIe46ozvC2ijjBTqPj2tUkTdIiTGiYVEeaMrpkBY2qvPhBgv2tn09KS6VP98tsryBkX47Hfbj%2Fdjh6grOSYB9n9Md7fAaLvsOZlqxXvgLmPdv3x71vh%2F%2B9KFnf0V3F79lvWiN79bvb7k2vxO%2Bg6Xtz2Vjgbs7g7AT%2BHAN3%2FzdAI%2BonSoadhzIYuOobKS0gknh90%2F33567%2FAA%3D%3D&RelayState=https%3A%2F%2Fwdc.service-now.com%2Fsp%3Fid%3Dhr",},
         {id: 2, title: "COVID-19 Updates", link: "https://sharedspace.sharepoint.com/sites/COVID_19",},
@@ -44,39 +44,39 @@ export const in_data = {
     }
   ],
   highlight: [
-    // {
-    //   id: 1,
-    //   title: "Learning Playlist: Gain Clarity During Change",
-    //   description: "Learning Playlist: Gain Clarity During Change",
-    //   image: "https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/f23842eb-e43b-4749-91ee-b08ff13bc82d/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
-    //   link: "https://login.microsoftonline.com/b61c8803-16f3-4c35-9b17-6f65f441df86/saml2",
-    // },
+    {
+      id: 1,
+      title: "Learning Playlist: Gain Clarity During Change",
+      description: "Learning Playlist: Gain Clarity During Change",
+      image:'/people-hub/assert/img/1.jpg',
+      link: "https://login.microsoftonline.com/b61c8803-16f3-4c35-9b17-6f65f441df86/saml2",
+    },
     {
       id: 2,
-      title: "TWestern Digital Reports Fiscal Fourth Quarter and Fiscal Year 2024 Financial Results",
+      title: "Western Digital Reports Fiscal Fourth Quarter and Fiscal Year 2024 Financial Results",
       description: "Western Digital Corp. (Nasdaq: WDC) today reported fiscal fourth quarter and fiscal year 2024 financial results.",
-      image: "https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/f9cfdc30-d5d2-447e-a71d-fe4963cfad91/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
+      image:'/people-hub/assert/img/2.jpg',
       link: "https://www.westerndigital.com/company/newsroom/press-releases/2024/2024-07-31-western-digital-reports-fiscal-fourth-quarter-and-fiscal-year-2024-financial-results",
     },
     {
       id: 3,
       title: "The Western Digital 401(k) Plan is Moving to Fidelity",
       description: "The Western Digital 401(k) Plan is Moving to Fidelity.",
-      image:"https://media.akamai.odsp.cdn.office.net/southcentralus1-mediap.svc.ms/transform/thumbnail?provider=url&inputFormat=jpg&docid=https%3A%2F%2Fcdn.hubblecontent.osi.office.net%2Fm365content%2Fpublish%2F6ca3d900-a08e-4e87-a180-e67d9ee0a287%2Fimage.jpg&w=960",
+      image:'/people-hub/assert/img/3.jpg',
       link: "https://nb.fidelity.com/static/mybenefits/netbenefitslogin/#/login",
     },
     {
       id: 4,
       title: "Stay Informed with WD [INSIDE]",
       description: "Welcome to WD [INSIDE] – stay informed on pressing company updates that cover the information you care about from the most informed sources inside Western Digital.",
-      image:"https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/b4003747-b354-4f06-9343-14c2dd496ac9/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
+      image:'/people-hub/assert/img/4.jpeg',
       link: "https://sharedspace.sharepoint.com/sites/WD-Inside",
     },
     {
       id: 5,
       title: "CommUNITY Day Unites Employees",
       description: "At Western Digital’s sites in May and June, employees gathered at their local sites to give back, play games, share a meal and network at CommUNITY Day.",
-      image:"https://sharedspace.sharepoint.com/_api/v2.1/sites/sharedspace.sharepoint.com,8638b1d5-1933-4836-b5a9-0917a2a4bf58,f1b7f95d-725e-4ccf-88ec-2bac33b7a9d8/lists/984e1091-7534-482a-9830-ab972513f6b7/items/81289b47-6ab3-41fb-b37e-b5a70e9411c0/driveItem/thumbnails/0/c960x99999/content?prefer=noRedirect,extendCacheMaxAge&clientType=modernWebPart&format=webp",
+      image:'/people-hub/assert/img/5.jpg',
       link: "https://sharedspace.sharepoint.com/SitePages/hp-blogs/community-day-unites-employees.aspx",
     },
     
@@ -313,7 +313,7 @@ export const in_data = {
     EmployeeWellness: "https://sharedspace.sharepoint.com/sites/hr-india/SitePages/3c6y5sj9.aspx",
     EmployeeEngagement: "https://sharedspace.sharepoint.com/sites/hr-india/SitePages/hr-india-employee-engagement.aspx",
     GlobalGivingDoing: "https://sharedspace.sharepoint.com/sites/hr-ggd",
-    DiversityEquityInclusion: "https://sharedspace.sharepoint.com/sites/hr-india/SitePages/hr-india-diversity-inclusion.aspx",
+    // DiversityEquityInclusion: "https://sharedspace.sharepoint.com/sites/hr-india/SitePages/hr-india-diversity-inclusion.aspx",
   },
   upcomingEvents: [
     {

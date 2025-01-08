@@ -8,7 +8,7 @@
   gap: 10px; /* Space between grid items */
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin;
-  max-height: 310px; 
+  max-height: 380px; 
   /* padding: 10px; Optional padding for better spacing */
 }
 

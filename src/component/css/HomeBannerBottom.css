@@ -1,47 +1,64 @@
+/* Main Container */
 .feeds-container {
-  width: 90%;
-  
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   box-sizing: border-box;
   text-align: left;
-  margin: 0 auto; 
-  /* margin-top: 5px !important; */
-  justify-content: center; /* Centers content horizontally within the container */
+  margin: 20px auto;
+  justify-content: center;
 }
 
-.feeds-left,
-.feeds-right {
-  flex: 1;
-  min-width: 250px; 
+/* Left Column (Quick Links, Top Resources, Most Viewed Pages, FAQ) */
+.feeds-left {
+  min-width: 300px;
   max-width: 20%;
   box-sizing: border-box;
 }
 
+/* Center Column (News, Career Development, Events) */
 .feeds-center {
-  flex: 1;
-  min-width: 250px; 
-  max-width: 60%;
+  min-width: 300px;
+  max-width: 70%;
   box-sizing: border-box;
 }
 
+/* Responsive Design */
 @media (max-width: 1024px) {
   .feeds-left,
-  .feeds-center,
-  .feeds-right {
+  .feeds-center {
     max-width: 100%;
   }
 
   .feeds-container {
-    flex-direction: column; 
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
+/* General Enhancements */
+.feeds-container > div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.feeds-container > div:hover {
+  /* transform: translateY(-5px); */
+  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
+}
+
+/* For better spacing and alignment */
+.feeds-container > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* Clean look for smaller devices */
 @media (max-width: 768px) {
-  .feeds-left,
-  .feeds-center,
-  .feeds-right {
-    padding: 5px;
+  .feeds-container > div {
+    padding: 15px;
   }
 }

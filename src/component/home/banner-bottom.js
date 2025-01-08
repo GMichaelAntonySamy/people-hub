@@ -1,46 +1,41 @@
 import React from "react";
 import FAQ from "./faq";
-import QuickSurvery from "./quick-survey";
 import QuickLinks from "./quick-links";
 import TopResources from "./top-resources";
-import UpcommingEvents from "./upcomming-events";
-import HolidayCalendar from "./holiday-calendar";
-import Events from "./events";
-import News from "./news";
-import "./../css/HomeBannerBottom.css";
 import MostViewedPages from "./most-viewed-pages";
-import HomeBannerInfoLeft from "./banner-left-info";
-import PolicyList from "./policy-list";
-import Search from "./search";
+import News from "./news";
+import Events from "./events";
 import LeadershipTeam from "./leadership-team";
-import TopMenus from "./top-menu";
 import CareerDevelopment from "./career-development";
+import "./../css/HomeBannerBottom.css";
+import Divider from "../shared/divider";
 
 const HomeBannerBottom = ({ siteData }) => {
   return (
     <>
+      {/* <QuickLinks siteData={siteData} /> */}
+      <Divider/>
       <div className="feeds-container">
         <div className="feeds-left">
-          {/* <TopMenus siteData={siteData} /> */}
           <TopResources siteData={siteData} />
           <MostViewedPages siteData={siteData} />
-          <HolidayCalendar siteData={siteData} />
-          {/* <QuickSurvery siteData={siteData} /> */}
         </div>
         <div className="feeds-center">
-          <QuickLinks siteData={siteData} />
-          <FAQ siteData={siteData} />
-          <CareerDevelopment siteData={siteData} />
-          <TopMenus siteData={siteData} />
-          <PolicyList siteData={siteData} />
-          {/* <LeadershipTeam siteData={siteData} /> */}
-        </div>
-        <div className="feeds-right">
-          <News siteData={siteData} />
-          <Events siteData={siteData} />
-          <UpcommingEvents siteData={siteData} />
+          <div className="row">
+            <div className="col-md-8">
+            <QuickLinks siteData={siteData} />
+            <FAQ siteData={siteData} />
+            <CareerDevelopment siteData={siteData} />
+              
+            </div>
+            <div className="col-md-4">
+              <Events siteData={siteData} />
+              <News siteData={siteData} />
+            </div>
+          </div>
         </div>
       </div>
+      <Divider/>
       <LeadershipTeam siteData={siteData} />
     </>
   );

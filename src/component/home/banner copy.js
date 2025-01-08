@@ -1,38 +1,71 @@
-import React from "react";
-import bannerImage from "./../../assert/images/banner-image.png";
-import HomeBannerInfoLeft from "./banner-left-info";
-import './../css/HomeBanner.css'
-import PolicyList from "./policy-list";
+import React, { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "./../css/HomeBanner.css";
 
 const HomeBanner = ({ siteData }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const swiperRef = useRef(null);
+
+  // Fallback if siteData or highlight is undefined
+  if (!siteData || !siteData.highlight || siteData.highlight.length === 0) {
+    return <div>No data available</div>;
+  }
+
   return (
-    <>
-    <div className="profile-name">Welcome Logesh Manohar</div>
-      <div className="home-banner">
-        <div className="banner-image" style={{ backgroundImage: `url(${bannerImage})` }}></div>
-        <div className="overlay-content">
-          <div className="row">
-            <div className="col-md-8 col-lg-8 col-sm-12">
-              <HomeBannerInfoLeft siteData={siteData} />
-            </div>
-            {/* <div className="col-md-5 col-lg-5 col-sm-12" style={{ height: '250px' }}>
-              <iframe
-                src="https://www.youtube.com/embed/04UMwHBhWPU?si=UpMgpardXCUEv4-3"
-                style={{ height: '250px' }}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div> */}
-            <div className="col-md-4 col-lg-4 col-sm-12">
-              <PolicyList siteData={siteData} />
-            </div>
-          </div>
+    <div className="banner-container">
+      {/* <div className="search-container" style={{ alignItems: "center" }}>
+        <div className="welcome-message">
+          Welcome to People Hub, Logesh Manohar!
         </div>
+        <div className="search-input-wrapper">
+          <input
+            type="text"
+            placeholder='Search "Powered by Glean"'
+            className="search-input"
+          />
+          <i className="fas fa-search search-icon"></i>
+        </div>
+      </div> */}
+
+      {/* New Swiper and Text Section */}
+      <div className="content-container">
+        {/* Swiper on the left */}
+        <div className="swiper-wrapper">
+          <Swiper
+            onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
+            // autoplay={{ delay: 3000 }}
+            // key={currentSlide} 
+            // modules={[Autoplay]}
+            // loop
+            className="background-swiper"
+            ref={swiperRef}
+          >
+            {siteData.highlight.map((item, index) => (
+              <SwiperSlide key={index} className="banner-slide">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="swiper-image"
+                  style={{width:"100% !important"}}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        {/* <div className="text-wrapper">
+          {siteData.highlight[currentSlide] ? (
+            <>
+              <h3>{siteData.highlight[currentSlide].title}</h3>
+              <p>{siteData.highlight[currentSlide].description}</p>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div> */}
       </div>
-    </>
+    </div>
   );
 };
 

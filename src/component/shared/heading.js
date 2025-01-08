@@ -4,7 +4,7 @@ const Headings = ({text}) => {
   return (
     <div className="heading-container">
       {/* <span className="pipe-heading">|</span> */}
-      <span className="heading-text">{text}</span>
+      <span className="heading-text" style={{textAlign:'left'}}>{text}</span>
     </div>
   );
 };

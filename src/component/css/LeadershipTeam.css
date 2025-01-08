@@ -55,13 +55,13 @@
 .leadership-team-name {
   font-size: 14px;
   color: white;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 4px;
 }
 
 .leadership-team-designation {
   font-size: 12px;
-  color: #666;
+  color: white;
   text-align: left;
 }
 

@@ -16,9 +16,9 @@ const LeadershipTeam = ({ siteData }) => {
             fontSize: "1.5rem",
             fontWeight: "450",
             color: "white",
-            marginTop:"20px"
+            // marginTop:"20px"
           }}
-        >
+        ><br></br>
           People Solutions Leadership Team
         </div>
         <div className="leadership-team-container">

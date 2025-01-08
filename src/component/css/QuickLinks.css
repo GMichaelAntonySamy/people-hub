@@ -1,77 +1,95 @@
+/* QuickLinks Container */
 .quick-links-container {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 20px auto;
 }
 
+/* Heading */
+.quick-links-heading {
+  font-size: 24px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left !important;
+}
+
+/* Links Row */
 .quick-links-row {
-  display: flex; /* Enable flexbox */
-  justify-content: space-between; /* Space between columns */
-  align-items: flex-start; /* Align items to the top (or change to center if needed) */
-  flex-wrap: wrap; /* Allow wrapping if the container's width is too small */
-  width: 100%; /* Full width of the container */
-  max-width: 960px; /* Limit the maximum width of the container */
-}
-
-.quick-link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 3px;
-  flex: 1 1 auto; /* Allow items to take equal width but not shrink */
-  max-width: 160px; /* Limit max width for each item */
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  width: 100%;
 }
 
+/* Individual Quick Link */
+.quick-link {
+  flex: 1 1 calc(20% - 15px); /* Adjust width dynamically */
+  min-width: 100px;
+}
+
+/* Link Item */
 .quick-link-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7px;
-  background-color: black;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  padding: 15px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  /* font-weight: 600; */
   transition: all 0.3s ease;
-  min-width: 100%;
-  min-height: 90px;
-  max-height: 90px;
-  max-width: 100px;
-  text-align: center;
-  justify-content: center;
-  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent; /* Transparent border by default */
 }
 
+/* Hover Effect */
 .quick-link-item:hover {
-  /* border-color: var(--hover-color); */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px); /* Lift effect on hover */
+  color: black;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border-color: black;
 }
 
+/* Icon Styling */
 .quick-link-icon {
   font-size: 24px;
-  /* color: #4f4f4f;  */
-  color: white;
   margin-bottom: 10px;
+  color: white;
   transition: color 0.3s ease;
 }
 
 .quick-link-item:hover .quick-link-icon {
-  color: var(--hover-color); /* Icon color change on hover */
+  color: black;
 }
 
-.quick-link span {
+/* Link Text */
+.quick-link-item span {
   font-size: 14px;
-  /* color: #333; */
-  color: white;
-  font-weight: 600;
+  text-align: center;
 }
 
+/* Hover Link Text */
+.quick-link-item:hover span {
+  color: black;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .quick-link {
-    max-width: 120px; /* Slightly smaller width for mobile */
+    flex: 1 1 calc(50% - 15px); /* Two items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-link {
+    flex: 1 1 100%; /* One item per row */
   }
 }
