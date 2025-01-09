@@ -25,9 +25,9 @@
   object-fit: contain; /* Maintain aspect ratio */
 }
 
-.fab-button:hover {
+/* .fab-button:hover {
   transform: scale(1.1);
-}
+} */
 
 
 .close-icon {
