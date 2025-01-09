@@ -3,47 +3,33 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background-color: transparent;
   border: none;
-  width: 160px; /* Increased width to fit the text */
-  height: 80px; /* Increased height for text and image */
-  border-radius: 30px;  /* Adjust border radius */
+  width: 400px; /* Set a fixed size for consistent display */
+  height: 400px;
   cursor: pointer;
   transition: transform 0.3s;
+  z-index: 9999; /* Ensure FAB is above other content */
   display: flex;
-  flex-direction: column; /* Align text above the image */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 9999;  /* Ensure FAB is above other content */
-}
-
-/* .fab-button:hover {
-  transform: scale(1.1);
-} */
-
-/* Container for the text and logo inside the FAB */
-.fab-container {
-  display: flex;
-  flex-direction: column; /* Stack text above the logo */
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .fab-image {
-  width: 55px;  /* Smaller logo size */
-  height: 55px;
-  object-fit: contain;
-  margin-top: 10px; /* Margin added to space out the image from text */
+  position: absolute; /* Position relative to the `.fab-button` */
+  bottom: 10px; /* 10px from the bottom of the FAB */
+  right: 10px; /* 10px from the right of the FAB */
+  width: 30%; /* Fixed size for the image */
+  height: 30%; /* Fixed size for the image */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
-.fab-text {
-  font-size: 12px;  /* Text size */
-  color: #fff;
-  font-weight: bold;
-  display: block;
+.fab-button:hover {
+  transform: scale(1.1);
 }
 
-/* Close Icon Styles */
+
 .close-icon {
   font-size: 30px;
   color: #fff;
@@ -87,7 +73,7 @@
 }
 
 .chat-logo {
-  width: 30px;  /* Smaller logo size */
+  width: 30px; /* Smaller logo size */
   height: 30px;
   object-fit: contain;
   margin-right: 10px;
@@ -151,3 +137,5 @@
 .close-btn {
   font-size: 30px;
 }
+
+/* Add any other necessary styling */

@@ -120,27 +120,27 @@ export const us_data = {
   faq: [
     {
       id: 1,
-      title: "How to show Video in a page",
+      title: "How to increase/ decrease my 401k contribution?",
       text: "You can manage your account and make changes online at www.NetBenefits.com. Fidelity representatives will be available through the Fidelity Benefits Service Center at 800-835-5095 to assist you with all Plan services.",
     },
     {
       id: 2,
-      title: "Can I share Doc Library to all",
+      title: "How can I add dependents in workday?",
       text: "Log in to Workday, click View All Apps in the Quick Tasks panel on the right-hand side of the home page. Select the My Benefits worklet under All Apps. Go to the right side of the page, and in the panel called 'Change My Benefits', select Add or Edit My Dependent. Click Edit next to each dependent listed to edit that dependent’s  personal information. At the top of the page under Effective Date & Reason, select the Pencil icon and enter today's date or the date you wish the change to be effective.",
     },
     {
       id: 3,
-      title: "Is there guide to Web Part usage",
+      title: "How to generate employment verification letter?",
       text: "Login to https://theworknumber.com/ to view your data. Go to Letters Center to access Employment Verification Letter with or without Income or Letter for Immigration Purposes. ",
     },
     {
       id: 4,
-      title: "How to create banner graphic tile",
+      title: "How to apply for unpaid leave?",
       text: "Inform your supervisor/manager of your leave of absence request Notify MetLife within seven days of the first day of absence to initiate your STD claim* — you will be given a claim number at the end of the call. You may call or initiate your claim through the MyBenefits website at www.metlife.com/mybenefits MetLife may contact you for additional details about you, your job, your condition and your treatment plan andprovider. MetLife will then mail an Acknowledgement Package to you with important information that requires action. For more details visit: https://sharedspace.sharepoint.com/sites/hr-us/SitePages/Leave%20Of%20Absence%20(Employee).aspx ",
     },
     {
       id: 5,
-      title: "How do I add news",
+      title: "What is Western Digital’s travel policy?",
       text: "The purpose of this policy is to define guidelines and procedures for (a) travel expenses, (b) business expenses and (c) travel-related cash advances (CA) processed through Concur. This policy sets forth the requirements for travel arrangements, required pre-approvals before incurring expenses, reimbursable and non-reimbursable expenses, expense limits and expense reporting requirements. Visit Policy for detailed information: WDC-WP-1-PUR-002 Global Travel and Business Expense Policy - Rev A.docx",
     },
   ],
