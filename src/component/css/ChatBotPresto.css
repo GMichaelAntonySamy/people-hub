@@ -1,140 +1,153 @@
 /* Floating Action Button Styles */
 .fab-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;  /* Circular shape */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;  /* Ensure FAB is above other content */
-    background-color: #45007f;
-  }
-  
-  .fab-button:hover {
-    transform: scale(1.1);
-  }
-  
-  .fab-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Ensures the image covers the button completely */
-  }
-  
-  .close-icon {
-    font-size: 30px;
-    color: #fff;
-  }
-  
-  /* Chat Window Styles */
-  .chat-window {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ddd;
-    transition: all 0.3s ease-in-out;
-    z-index: 9999; /* Ensure the chat window is above other content */
-  }
-  
-  .chat-window.maximized {
-    width: 100vw;
-    height: 100vh;
-    bottom: 0;
-    right: 0;
-    border-radius: 0;
-  }
-  
-  .chat-header {
-    background-color: #efeaf3;
-    color: #45007f;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 18%);
-  }
-  
-  .chat-logo {
-    width: 30px;  /* Smaller logo size */
-    height: 30px;
-    object-fit: contain;
-    margin-right: 10px;
-  }
-  
-  .chat-header h3 {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .chat-body {
-    padding: 15px;
-    flex-grow: 1;
-    overflow-y: auto;
-  }
-  
-  .chat-footer {
-    display: flex;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-  
-  .chat-footer input {
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  .chat-footer button {
-    padding: 8px 15px;
-    background-color: #45007f;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .chat-footer button:hover {
-    background-color: #45007f;
-  }
-  
-  /* Close and Maximize Buttons */
-  .close-btn,
-  .maximize-btn {
-    background: none;
-    border: none;
-    color: #45007f;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .maximize-btn {
-    font-size: 20px;
-    color: #45007f;
-  }
-  
-  .close-btn {
-    font-size: 30px;
-  }
-  
-  /* Add any other necessary styling */
-  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  width: 160px; /* Increased width to fit the text */
+  height: 80px; /* Increased height for text and image */
+  border-radius: 30px;  /* Adjust border radius */
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column; /* Align text above the image */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;  /* Ensure FAB is above other content */
+}
+
+/* .fab-button:hover {
+  transform: scale(1.1);
+} */
+
+/* Container for the text and logo inside the FAB */
+.fab-container {
+  display: flex;
+  flex-direction: column; /* Stack text above the logo */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fab-image {
+  width: 55px;  /* Smaller logo size */
+  height: 55px;
+  object-fit: contain;
+  margin-top: 10px; /* Margin added to space out the image from text */
+}
+
+.fab-text {
+  font-size: 12px;  /* Text size */
+  color: #fff;
+  font-weight: bold;
+  display: block;
+}
+
+/* Close Icon Styles */
+.close-icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Chat Window Styles */
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999; /* Ensure the chat window is above other content */
+}
+
+.chat-window.maximized {
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+.chat-header {
+  background-color: #efeaf3;
+  color: #45007f;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 18%);
+}
+
+.chat-logo {
+  width: 30px;  /* Smaller logo size */
+  height: 30px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.chat-header h3 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.chat-body {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.chat-footer input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chat-footer button {
+  padding: 8px 15px;
+  background-color: #45007f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-footer button:hover {
+  background-color: #45007f;
+}
+
+/* Close and Maximize Buttons */
+.close-btn,
+.maximize-btn {
+  background: none;
+  border: none;
+  color: #45007f;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.maximize-btn {
+  font-size: 20px;
+  color: #45007f;
+}
+
+.close-btn {
+  font-size: 30px;
+}
